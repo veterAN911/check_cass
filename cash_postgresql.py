@@ -52,3 +52,17 @@ def fiscalnum(ip,login,pas,id):
     conn.close()
     text_result = str(result[0])
     return text_result
+
+def new_cap_check(id):
+    conn = cash
+    qwery = '''INSERT INTO ch_purchase ("id","datecommit","datecreate","fiscaldocnum","senttoserverstatus","id_session","id_shift","checkstatus","checksumend","checksumstart","currentchecknum","discountvaluetotal",
+"id_loyaltransaction","operationtype","id_purchaseref","filename","kpk","spnd","set5checknumber","denyprinttodocuments","client_guid","clienttype","id_main_purchase","inn","vet_inspection","receipt_wide_discount",
+"on_day","guid_cashier_work_period","qr_code","fiscal_doc_id","cashoperation","reg_status","reg_data")
+(SELECT nextval('hibernate_sequence'),'2021-04-06','2021-04-06','1524;185',2,NULL,\'''' + id + '''\',    -- смена
+0,123123,123123,0,0,6076001,'t',NULL,NULL,1273666,34341,NULL,'f',NULL,0,NULL,5047085094,'f',0,NULL,NULL,NULL,NULL,0,NULL,NULL);
+'''
+
+def new_check(id):
+    conn = cash
+    new_cap_check(id);
+
