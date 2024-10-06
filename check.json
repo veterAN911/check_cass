@@ -1,0 +1,422 @@
+<TransactionPage>
+<transactions>
+<transactions>
+<id>0007240729059417_7380440700536218_20668</id>
+<shiftNumber>131</shiftNumber>
+<transactionDate>2024-10-01T09: 54: 00.000</transactionDate>
+<transactionType>TICKET</transactionType>
+<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
+<kkmId>0007240729059417</kkmId>
+<fiscalId>3906120888</fiscalId>
+<fnsFlcStatus>OK</fnsFlcStatus>
+<fnsStatus>200</fnsStatus>
+<fnsDescription/>
+<fnsConfirmation>{
+    "fdId": "5498995785802638592"
+}</fnsConfirmation>
+<sum>62.00</sum>
+<payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>CASH</paymentType>
+</payments>
+<payments>
+<sum>62.00</sum>
+<paymentType>CARD</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>PREPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>POSTPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>COUNTERSUBMISSION</paymentType>
+</payments>
+</payments>
+<operationType>2</operationType>
+<requestNumber>8</requestNumber>
+<fiscalDocumentNumber>20668</fiscalDocumentNumber>
+<userPropertyKey/>
+<userPropertyValue/>
+<insertedAt>2024-10-01T09: 54: 49.592+03: 00</insertedAt>
+<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
+<taxationType>1</taxationType>
+<taxes>
+<rate>0.20</rate>
+<name>НДС 20%</name>
+<sum>10.33</sum>
+</taxes>
+</transactions>
+<transactions>
+<id>0007240729059417_7380440700536218_20667</id>
+<shiftNumber>131</shiftNumber>
+<transactionDate>2024-10-01T09: 53: 00.000</transactionDate>
+<transactionType>TICKET</transactionType>
+<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
+<kkmId>0007240729059417</kkmId>
+<fiscalId>1656008823</fiscalId>
+<fnsFlcStatus>OK</fnsFlcStatus>
+<fnsStatus>200</fnsStatus>
+<fnsDescription/>
+<fnsConfirmation>{
+    "fdId": "5498994151379940096"
+}</fnsConfirmation>
+<sum>128.00</sum>
+<payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>CASH</paymentType>
+</payments>
+<payments>
+<sum>128.00</sum>
+<paymentType>CARD</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>PREPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>POSTPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>COUNTERSUBMISSION</paymentType>
+</payments>
+</payments>
+<operationType>2</operationType>
+<requestNumber>7</requestNumber>
+<fiscalDocumentNumber>20667</fiscalDocumentNumber>
+<userPropertyKey/>
+<userPropertyValue/>
+<insertedAt>2024-10-01T09: 53: 11.450+03: 00</insertedAt>
+<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
+<taxationType>1</taxationType>
+<taxes>
+<rate>0.20</rate>
+<name>НДС 20%</name>
+<sum>21.33</sum>
+</taxes>
+</transactions>
+<transactions>
+<id>0007240729059417_7380440700536218_20666</id>
+<shiftNumber>131</shiftNumber>
+<transactionDate>2024-10-01T09: 40: 00.000</transactionDate>
+<transactionType>TICKET</transactionType>
+<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
+<kkmId>0007240729059417</kkmId>
+<fiscalId>1453217969</fiscalId>
+<fnsFlcStatus>OK</fnsFlcStatus>
+<fnsStatus>200</fnsStatus>
+<fnsDescription/>
+<fnsConfirmation>{
+    "fdId": "5498981267700824065"
+}</fnsConfirmation>
+<sum>186.00</sum>
+<payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>CASH</paymentType>
+</payments>
+<payments>
+<sum>186.00</sum>
+<paymentType>CARD</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>PREPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>POSTPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>COUNTERSUBMISSION</paymentType>
+</payments>
+</payments>
+<operationType>2</operationType>
+<requestNumber>6</requestNumber>
+<fiscalDocumentNumber>20666</fiscalDocumentNumber>
+<userPropertyKey/>
+<userPropertyValue/>
+<insertedAt>2024-10-01T09: 40: 12.535+03: 00</insertedAt>
+<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
+<taxationType>1</taxationType>
+<taxes>
+<rate>0.20</rate>
+<name>НДС 20%</name>
+<sum>31.00</sum>
+</taxes>
+</transactions>
+<transactions>
+<id>0007240729059417_7380440700536218_20665</id>
+<shiftNumber>131</shiftNumber>
+<transactionDate>2024-10-01T09: 36: 00.000</transactionDate>
+<transactionType>TICKET</transactionType>
+<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
+<kkmId>0007240729059417</kkmId>
+<fiscalId>3760085504</fiscalId>
+<fnsFlcStatus>OK</fnsFlcStatus>
+<fnsStatus>200</fnsStatus>
+<fnsDescription/>
+<fnsConfirmation>{
+    "fdId": "5498977288734356224"
+}</fnsConfirmation>
+<sum>39.50</sum>
+<payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>CASH</paymentType>
+</payments>
+<payments>
+<sum>39.50</sum>
+<paymentType>CARD</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>PREPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>POSTPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>COUNTERSUBMISSION</paymentType>
+</payments>
+</payments>
+<operationType>2</operationType>
+<requestNumber>5</requestNumber>
+<fiscalDocumentNumber>20665</fiscalDocumentNumber>
+<userPropertyKey/>
+<userPropertyValue/>
+<insertedAt>2024-10-01T09: 36: 26.254+03: 00</insertedAt>
+<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
+<taxationType>1</taxationType>
+<taxes>
+<rate>0.10</rate>
+<name>НДС 10%</name>
+<sum>3.59</sum>
+</taxes>
+</transactions>
+<transactions>
+<id>0007240729059417_7380440700536218_20664</id>
+<shiftNumber>131</shiftNumber>
+<transactionDate>2024-10-01T09: 31: 00.000</transactionDate>
+<transactionType>TICKET</transactionType>
+<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
+<kkmId>0007240729059417</kkmId>
+<fiscalId>3788498359</fiscalId>
+<fnsFlcStatus>OK</fnsFlcStatus>
+<fnsStatus>200</fnsStatus>
+<fnsDescription/>
+<fnsConfirmation>{
+    "fdId": "5498972602726802688"
+}</fnsConfirmation>
+<sum>59.00</sum>
+<payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>CASH</paymentType>
+</payments>
+<payments>
+<sum>59.00</sum>
+<paymentType>CARD</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>PREPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>POSTPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>COUNTERSUBMISSION</paymentType>
+</payments>
+</payments>
+<operationType>2</operationType>
+<requestNumber>4</requestNumber>
+<fiscalDocumentNumber>20664</fiscalDocumentNumber>
+<userPropertyKey/>
+<userPropertyValue/>
+<insertedAt>2024-10-01T09: 31: 45.555+03: 00</insertedAt>
+<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
+<taxationType>1</taxationType>
+<taxes>
+<rate>0.20</rate>
+<name>НДС 20%</name>
+<sum>9.84</sum>
+</taxes>
+</transactions>
+<transactions>
+<id>0007240729059417_7380440700536218_20663</id>
+<shiftNumber>131</shiftNumber>
+<transactionDate>2024-10-01T09: 29: 00.000</transactionDate>
+<transactionType>TICKET</transactionType>
+<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
+<kkmId>0007240729059417</kkmId>
+<fiscalId>4077539615</fiscalId>
+<fnsFlcStatus>OK</fnsFlcStatus>
+<fnsStatus>200</fnsStatus>
+<fnsDescription/>
+<fnsConfirmation>{
+    "fdId": "5498970132955347456"
+}</fnsConfirmation>
+<sum>134.00</sum>
+<payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>CASH</paymentType>
+</payments>
+<payments>
+<sum>134.00</sum>
+<paymentType>CARD</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>PREPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>POSTPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>COUNTERSUBMISSION</paymentType>
+</payments>
+</payments>
+<operationType>2</operationType>
+<requestNumber>3</requestNumber>
+<fiscalDocumentNumber>20663</fiscalDocumentNumber>
+<userPropertyKey/>
+<userPropertyValue/>
+<insertedAt>2024-10-01T09: 29: 20.353+03: 00</insertedAt>
+<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
+<taxationType>1</taxationType>
+<taxes>
+<rate>0.20</rate>
+<name>НДС 20%</name>
+<sum>22.34</sum>
+</taxes>
+</transactions>
+<transactions>
+<id>0007240729059417_7380440700536218_20662</id>
+<shiftNumber>131</shiftNumber>
+<transactionDate>2024-10-01T09: 28: 00.000</transactionDate>
+<transactionType>TICKET</transactionType>
+<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.cash</transactionDescription>
+<kkmId>0007240729059417</kkmId>
+<fiscalId>803126918</fiscalId>
+<fnsFlcStatus>OK</fnsFlcStatus>
+<fnsStatus>200</fnsStatus>
+<fnsDescription/>
+<fnsConfirmation>{
+    "fdId": "5498968911688951040"
+}</fnsConfirmation>
+<sum>215.00</sum>
+<payments>
+<payments>
+<sum>215.00</sum>
+<paymentType>CASH</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>CARD</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>PREPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>POSTPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>COUNTERSUBMISSION</paymentType>
+</payments>
+</payments>
+<operationType>2</operationType>
+<requestNumber>2</requestNumber>
+<fiscalDocumentNumber>20662</fiscalDocumentNumber>
+<userPropertyKey/>
+<userPropertyValue/>
+<insertedAt>2024-10-01T09: 28: 07.549+03: 00</insertedAt>
+<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
+<taxationType>1</taxationType>
+<taxes>
+<rate>0.20</rate>
+<name>НДС 20%</name>
+<sum>35.84</sum>
+</taxes>
+</transactions>
+<transactions>
+<id>0007240729059417_7380440700536218_20661</id>
+<shiftNumber>131</shiftNumber>
+<transactionDate>2024-10-01T09: 04: 00.000</transactionDate>
+<transactionType>TICKET</transactionType>
+<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
+<kkmId>0007240729059417</kkmId>
+<fiscalId>4133536982</fiscalId>
+<fnsFlcStatus>OK</fnsFlcStatus>
+<fnsStatus>200</fnsStatus>
+<fnsDescription/>
+<fnsConfirmation>{
+    "fdId": "5498944629215834880"
+}</fnsConfirmation>
+<sum>187.50</sum>
+<payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>CASH</paymentType>
+</payments>
+<payments>
+<sum>187.50</sum>
+<paymentType>CARD</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>PREPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>POSTPAYMENT</paymentType>
+</payments>
+<payments>
+<sum>0.00</sum>
+<paymentType>COUNTERSUBMISSION</paymentType>
+</payments>
+</payments>
+<operationType>2</operationType>
+<requestNumber>1</requestNumber>
+<fiscalDocumentNumber>20661</fiscalDocumentNumber>
+<userPropertyKey/>
+<userPropertyValue/>
+<insertedAt>2024-10-01T09: 04: 00.482+03: 00</insertedAt>
+<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
+<taxationType>1</taxationType>
+<taxes>
+<rate>0.20</rate>
+<name>НДС 20%</name>
+<sum>22.08</sum>
+</taxes>
+<taxes>
+<rate>0.10</rate>
+<name>НДС 10%</name>
+<sum>5.00</sum>
+</taxes>
+</transactions>
+</transactions>
+<pagination>
+<totalItems>128</totalItems>
+<pageSize>120</pageSize>
+<currentPage/>
+</pagination>
+</TransactionPage>

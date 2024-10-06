@@ -1,0 +1,1044 @@
+{
+    "transactions": [
+      {
+        "id": "0007240729059417_7380440700536218_20790",
+        "shiftNumber": 132,
+        "transactionDate": "2024-10-02T08:04:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0132",
+        "kkmId": "0007240729059417",
+        "fiscalId": "3069415469",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5500333822141243648\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20790,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-10-02T08:04:03.063+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20789",
+        "shiftNumber": 131,
+        "transactionDate": "2024-10-01T20:46:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0131",
+        "kkmId": "0007240729059417",
+        "fiscalId": "1313528546",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5499651833385794049\"}",
+        "sum": 33274.07,
+        "payments": [
+          {
+            "sum": 8533,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 24741.07,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20789,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-10-01T20:46:32.944+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20660",
+        "shiftNumber": 131,
+        "transactionDate": "2024-10-01T08:16:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0131",
+        "kkmId": "0007240729059417",
+        "fiscalId": "3488948290",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5498896725888394496\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20660,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-10-01T08:16:25.091+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20659",
+        "shiftNumber": 130,
+        "transactionDate": "2024-09-30T20:34:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0130",
+        "kkmId": "0007240729059417",
+        "fiscalId": "1561853150",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5498190071386911232\"}",
+        "sum": 47889.93,
+        "payments": [
+          {
+            "sum": 8103.3,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 39786.63,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20659,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-30T20:34:25.651+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20461",
+        "shiftNumber": 130,
+        "transactionDate": "2024-09-30T08:57:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0130",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2971366688",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5497488468175217922\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20461,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-30T08:57:26.712+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20460",
+        "shiftNumber": 129,
+        "transactionDate": "2024-09-29T21:01:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0129",
+        "kkmId": "0007240729059417",
+        "fiscalId": "3023132312",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5496767447637943554\"}",
+        "sum": 63087.34,
+        "payments": [
+          {
+            "sum": 11843.7,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 51243.64,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20460,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-29T21:01:10.295+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20282",
+        "shiftNumber": 129,
+        "transactionDate": "2024-09-29T08:48:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0129",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2010678899",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5496030137596876032\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20282,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-29T08:48:43.572+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20281",
+        "shiftNumber": 128,
+        "transactionDate": "2024-09-28T20:37:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0128",
+        "kkmId": "0007240729059417",
+        "fiscalId": "3585583919",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5495294449700876801\"}",
+        "sum": 89430.93,
+        "payments": [
+          {
+            "sum": 11684,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 77746.93,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20281,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-28T20:37:53.028+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20044",
+        "shiftNumber": 128,
+        "transactionDate": "2024-09-28T08:53:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0128",
+        "kkmId": "0007240729059417",
+        "fiscalId": "1319008393",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5494585053185408513\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20044,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-28T08:53:07.798+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_20043",
+        "shiftNumber": 127,
+        "transactionDate": "2024-09-27T21:00:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0127",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2253357800",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5493872972116714753\"}",
+        "sum": 56928.24,
+        "payments": [
+          {
+            "sum": 14397.4,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 42530.84,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 20043,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-27T21:00:59.309+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19863",
+        "shiftNumber": 127,
+        "transactionDate": "2024-09-27T08:52:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0127",
+        "kkmId": "0007240729059417",
+        "fiscalId": "884960824",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5493134975461153024\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19863,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-27T08:52:38.181+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19862",
+        "shiftNumber": 126,
+        "transactionDate": "2024-09-26T20:47:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0126",
+        "kkmId": "0007240729059417",
+        "fiscalId": "3307027060",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5492405022711715072\"}",
+        "sum": 36648.6,
+        "payments": [
+          {
+            "sum": 5987.4,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 30661.2,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19862,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-26T20:47:29.770+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19730",
+        "shiftNumber": 126,
+        "transactionDate": "2024-09-26T08:48:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0126",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2928087662",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5491681519068174592\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19730,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-26T08:48:45.459+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19729",
+        "shiftNumber": 125,
+        "transactionDate": "2024-09-25T20:52:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0125",
+        "kkmId": "0007240729059417",
+        "fiscalId": "4093803048",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5490960560684629504\"}",
+        "sum": 29598.67,
+        "payments": [
+          {
+            "sum": 7771.8,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 21826.87,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19729,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-25T20:52:33.211+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19618",
+        "shiftNumber": 125,
+        "transactionDate": "2024-09-25T08:50:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0125",
+        "kkmId": "0007240729059417",
+        "fiscalId": "584677308",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5490233383335797760\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19618,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-25T08:50:08.252+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19617",
+        "shiftNumber": 124,
+        "transactionDate": "2024-09-24T21:00:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0124",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2503481818",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5489519659614320641\"}",
+        "sum": 62061.7,
+        "payments": [
+          {
+            "sum": 16326.6,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 45735.1,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19617,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-24T21:01:01.547+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19390",
+        "shiftNumber": 124,
+        "transactionDate": "2024-09-24T08:23:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0124",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2981401577",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5488757349511852800\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19390,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-24T08:23:51.245+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19389",
+        "shiftNumber": 123,
+        "transactionDate": "2024-09-23T21:02:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0123",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2120386988",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5488071001395265024\"}",
+        "sum": 20369.95,
+        "payments": [
+          {
+            "sum": 4547.2,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 15822.75,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19389,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-23T21:02:01.096+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19309",
+        "shiftNumber": 123,
+        "transactionDate": "2024-09-23T08:19:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0123",
+        "kkmId": "0007240729059417",
+        "fiscalId": "4193331952",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5487303786533221120\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19309,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-23T08:19:52.482+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19308",
+        "shiftNumber": 122,
+        "transactionDate": "2024-09-22T20:42:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0122",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2153646433",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5486601379237779712\"}",
+        "sum": 53048.07,
+        "payments": [
+          {
+            "sum": 12071.2,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 40976.87,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19308,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-22T20:42:05.834+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19137",
+        "shiftNumber": 122,
+        "transactionDate": "2024-09-22T08:48:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0122",
+        "kkmId": "0007240729059417",
+        "fiscalId": "1736728520",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5485882910842217735\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19137,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-22T08:48:18.609+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_19136",
+        "shiftNumber": 121,
+        "transactionDate": "2024-09-21T20:46:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0121",
+        "kkmId": "0007240729059417",
+        "fiscalId": "860826422",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5485156522868077312\"}",
+        "sum": 59259.8,
+        "payments": [
+          {
+            "sum": 13744.9,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 45514.9,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 19136,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-21T20:46:45.559+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_18941",
+        "shiftNumber": 121,
+        "transactionDate": "2024-09-21T08:46:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0121",
+        "kkmId": "0007240729059417",
+        "fiscalId": "1441532080",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5484431923622024448\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 18941,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-21T08:46:56.058+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_18940",
+        "shiftNumber": 120,
+        "transactionDate": "2024-09-20T20:38:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0120",
+        "kkmId": "0007240729059417",
+        "fiscalId": "2525022179",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5483698326565864704\"}",
+        "sum": 31421.24,
+        "payments": [
+          {
+            "sum": 4869.1,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 26552.14,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 18940,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-20T20:38:10.273+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_18810",
+        "shiftNumber": 120,
+        "transactionDate": "2024-09-20T08:14:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0120",
+        "kkmId": "0007240729059417",
+        "fiscalId": "117160885",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5482949255470888960\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 18810,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-20T08:14:01.923+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_18809",
+        "shiftNumber": 119,
+        "transactionDate": "2024-09-19T20:34:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0119",
+        "kkmId": "0007240729059417",
+        "fiscalId": "591004105",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5482245536946321666\"}",
+        "sum": 40235.9,
+        "payments": [
+          {
+            "sum": 9217.3,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 31018.6,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 18809,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-19T20:34:57.351+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_18653",
+        "shiftNumber": 119,
+        "transactionDate": "2024-09-19T08:16:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0119",
+        "kkmId": "0007240729059417",
+        "fiscalId": "368499191",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5481501786862967041\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 18653,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-19T08:16:06.124+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_18652",
+        "shiftNumber": 118,
+        "transactionDate": "2024-09-18T20:58:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0118",
+        "kkmId": "0007240729059417",
+        "fiscalId": "4131618371",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5480819990566842880\"}",
+        "sum": 3269,
+        "payments": [
+          {
+            "sum": 365,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 2904,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 18652,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-18T20:58:48.170+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_18638",
+        "shiftNumber": 118,
+        "transactionDate": "2024-09-18T08:44:00.000",
+        "transactionType": "OPEN_SHIFT",
+        "transactionDescription": "transaction.open.shift 0118",
+        "kkmId": "0007240729059417",
+        "fiscalId": "174311384",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5480081326769751296\"}",
+        "sum": null,
+        "payments": [],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 18638,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-18T08:44:59.540+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      },
+      {
+        "id": "0007240729059417_7380440700536218_18637",
+        "shiftNumber": 117,
+        "transactionDate": "2024-09-17T20:45:00.000",
+        "transactionType": "CLOSE_SHIFT",
+        "transactionDescription": "transaction.close.shift 0117",
+        "kkmId": "0007240729059417",
+        "fiscalId": "4059803900",
+        "fnsFlcStatus": "OK",
+        "fnsStatus": 200,
+        "fnsDescription": null,
+        "fnsConfirmation": "{\"fdId\":\"5479357089384594946\"}",
+        "sum": 48439.55,
+        "payments": [
+          {
+            "sum": 10166.2,
+            "paymentType": "CASH"
+          },
+          {
+            "sum": 38273.35,
+            "paymentType": "CARD"
+          },
+          {
+            "sum": 0,
+            "paymentType": "PREPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "POSTPAYMENT"
+          },
+          {
+            "sum": 0,
+            "paymentType": "COUNTERSUBMISSION"
+          }
+        ],
+        "operationType": null,
+        "requestNumber": null,
+        "fiscalDocumentNumber": 18637,
+        "userPropertyKey": null,
+        "userPropertyValue": null,
+        "insertedAt": "2024-09-17T20:45:31.667+03:00",
+        "fiscalDriveNumber": "7380440700536218",
+        "taxationType": null,
+        "taxes": []
+      }
+    ],
+    "pagination": {
+      "totalItems": 263,
+      "pageSize": 30,
+      "currentPage": null
+    }
+  }
