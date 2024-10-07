@@ -1,5 +1,4 @@
 import psycopg2
-import gracik
 
 def con_cash(ip,login,pas):
     conn = psycopg2.connect(
@@ -10,6 +9,7 @@ def con_cash(ip,login,pas):
         port="5432",
         options="-c client_encoding=UTF8"
     )
+    print('Есть подключение к БД')
     return conn
 
 def con_catalog(ip,login,pas):
@@ -23,38 +23,23 @@ def con_catalog(ip,login,pas):
     )
     return conn
 
-cash = con_cash(gracik.entry0.get().strip(),gracik.entry1.get().strip(),gracik.entry2.get().strip())
-catalog = con_catalog(gracik.entry0.get().strip(),gracik.entry1.get().strip(),gracik.entry2.get().strip())
-
-def num_smen(id):
-    conn = cash
+def num_smen_and_fiscalnum(conn,id):
     cursor = conn.cursor()
-    query = f"SELECT numshift FROM public.ch_shift WHERE id = '{id}'"
+    query = f"SELECT fiscalnum,numshift FROM public.ch_shift WHERE id = '{id}'"
     cursor.execute(query)
     result = cursor.fetchone()
     conn.close()
-    text_result = str(result[0])
-    return text_result
+    return result
 
-def fiscalnum(ip,login,pas,id):
-    conn = psycopg2.connect(
-        dbname="cash", 
-        user=login,
-        password=pas,
-        host=ip,
-        port="5432",
-        options="-c client_encoding=UTF8"
-    )
+def num_check_db(conn,id):
     cursor = conn.cursor()
-    query = f"SELECT numshift FROM public.ch_shift WHERE id = '{id}'"
+    query = f"SELECT fiscal_doc_id FROM public.ch_purchase WHERE id_shift = '{id}' and fiscal_doc_id IS NOT NULL ORDER BY fiscal_doc_id DESC"
     cursor.execute(query)
-    result = cursor.fetchone()
+    result = cursor.fetchall()
     conn.close()
-    text_result = str(result[0])
-    return text_result
+    return result
 
 def new_cap_check(id):
-    conn = cash
     qwery = '''INSERT INTO ch_purchase ("id","datecommit","datecreate","fiscaldocnum","senttoserverstatus","id_session","id_shift","checkstatus","checksumend","checksumstart","currentchecknum","discountvaluetotal",
 "id_loyaltransaction","operationtype","id_purchaseref","filename","kpk","spnd","set5checknumber","denyprinttodocuments","client_guid","clienttype","id_main_purchase","inn","vet_inspection","receipt_wide_discount",
 "on_day","guid_cashier_work_period","qr_code","fiscal_doc_id","cashoperation","reg_status","reg_data")
@@ -63,6 +48,5 @@ def new_cap_check(id):
 '''
 
 def new_check(id):
-    conn = cash
-    new_cap_check(id);
+    new_cap_check(id)
 

@@ -34,16 +34,31 @@ def search_shift_cass_30(cass,session):
         else:
             print("Найдена смена №", data['transactions'][i]['shiftNumber'], "номер фискального документа открытия смены ", data['transactions'][i]['fiscalDocumentNumber'])
 
+def extract_last_value(string):
+    # Разделить строку по символу '_'
+    parts = string.split('_')
+    # Получить последний элемент из списка parts
+    last_value = parts[-1]
+    return last_value
 
 def search_shift(cass,num_shift,session):
-    search_shift = f'https://org.1-ofd.ru/api/cp-ofd/kkms/{cass}/transactions?shiftNumber={num_shift}&transactionTypes=BSO,TICKET&page=2&pageSize=120'
+    last_values = []
+    search_shift = f'https://org.1-ofd.ru/api/cp-ofd/kkms/{cass}/transactions?shiftNumber={num_shift}&transactionTypes=BSO,TICKET&page=1&pageSize=120'
+    payload = {'shiftNumber': num_shift,'transactionTypes': 'BSO,TICKET','page': 1,'pageSize': 120}
     response = session.get(search_shift)
     data = response.json()
-    print(data)
+    for i in range(data['pagination']['totalItems']):
+        last_value = extract_last_value(data['transactions'][i]['id'])
+        last_values.append(last_value)
+    return last_values
 
-session = authorize()
-cass = search_cass(443230012073533,session)
+def search_shift_all(log, pas, factorynum, num_shift):
+    session = authorize(log, pas)
+    cass = search_cass(factorynum, session)
+    #search_shift_cass_30(cass, session)
+    check_num = search_shift(cass, num_shift, session)
+    return check_num
+
 #search_shift_cass_30(cass, session)
-search_shift(cass,131,session)
-
 #print(num_smen("192.168.56.105","postgres","postgres","51654"))
+#print(search_shift_all("schernyshev@fix-price.ru","System99","0005020639032566","180"))
