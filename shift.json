@@ -1,1044 +1,4143 @@
 {
-    "transactions": [
+  "transactions": [
       {
-        "id": "0007240729059417_7380440700536218_20790",
-        "shiftNumber": 132,
-        "transactionDate": "2024-10-02T08:04:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0132",
-        "kkmId": "0007240729059417",
-        "fiscalId": "3069415469",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5500333822141243648\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20790,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-10-02T08:04:03.063+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22502",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T20:26:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3400643393",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506879253559633152\"}",
+          "sum": 477.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 477.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 79,
+          "fiscalDocumentNumber": 22502,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T20:26:21.365+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 79.50
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20789",
-        "shiftNumber": 131,
-        "transactionDate": "2024-10-01T20:46:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0131",
-        "kkmId": "0007240729059417",
-        "fiscalId": "1313528546",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5499651833385794049\"}",
-        "sum": 33274.07,
-        "payments": [
-          {
-            "sum": 8533,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 24741.07,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20789,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-10-01T20:46:32.944+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22501",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T20:17:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2526900126",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506870253772683776\"}",
+          "sum": 838.20,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 838.20,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 78,
+          "fiscalDocumentNumber": 22501,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T20:17:24.719+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 89.86
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 27.18
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20660",
-        "shiftNumber": 131,
-        "transactionDate": "2024-10-01T08:16:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0131",
-        "kkmId": "0007240729059417",
-        "fiscalId": "3488948290",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5498896725888394496\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20660,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-10-01T08:16:25.091+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22500",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T20:02:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "675496578",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506855665071179008\"}",
+          "sum": 739.00,
+          "payments": [
+              {
+                  "sum": 739.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 77,
+          "fiscalDocumentNumber": 22500,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T20:02:55.285+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 123.17
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20659",
-        "shiftNumber": 130,
-        "transactionDate": "2024-09-30T20:34:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0130",
-        "kkmId": "0007240729059417",
-        "fiscalId": "1561853150",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5498190071386911232\"}",
-        "sum": 47889.93,
-        "payments": [
-          {
-            "sum": 8103.3,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 39786.63,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20659,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-30T20:34:25.651+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22499",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T20:01:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2465952908",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506854712061683456\"}",
+          "sum": 598.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 598.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 76,
+          "fiscalDocumentNumber": 22499,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T20:01:58.257+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 99.66
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20461",
-        "shiftNumber": 130,
-        "transactionDate": "2024-09-30T08:57:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0130",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2971366688",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5497488468175217922\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20461,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-30T08:57:26.712+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22498",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T20:00:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "841799744",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506853548561753856\"}",
+          "sum": 33.00,
+          "payments": [
+              {
+                  "sum": 33.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 75,
+          "fiscalDocumentNumber": 22498,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T20:00:49.155+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 5.50
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20460",
-        "shiftNumber": 129,
-        "transactionDate": "2024-09-29T21:01:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0129",
-        "kkmId": "0007240729059417",
-        "fiscalId": "3023132312",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5496767447637943554\"}",
-        "sum": 63087.34,
-        "payments": [
-          {
-            "sum": 11843.7,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 51243.64,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20460,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-29T21:01:10.295+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22497",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T20:00:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "4089431141",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506853369330984192\"}",
+          "sum": 198.00,
+          "payments": [
+              {
+                  "sum": 198.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 74,
+          "fiscalDocumentNumber": 22497,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T20:00:48.598+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 18.00
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20282",
-        "shiftNumber": 129,
-        "transactionDate": "2024-09-29T08:48:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0129",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2010678899",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5496030137596876032\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20282,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-29T08:48:43.572+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22496",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:51:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1945146933",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506843909464520961\"}",
+          "sum": 227.20,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 227.20,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 73,
+          "fiscalDocumentNumber": 22496,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:51:14.513+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 12.54
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 13.82
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20281",
-        "shiftNumber": 128,
-        "transactionDate": "2024-09-28T20:37:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0128",
-        "kkmId": "0007240729059417",
-        "fiscalId": "3585583919",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5495294449700876801\"}",
-        "sum": 89430.93,
-        "payments": [
-          {
-            "sum": 11684,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 77746.93,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20281,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-28T20:37:53.028+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22495",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:50:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3536281485",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506842959115076864\"}",
+          "sum": 33.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 33.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 72,
+          "fiscalDocumentNumber": 22495,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:50:17.982+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 5.50
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20044",
-        "shiftNumber": 128,
-        "transactionDate": "2024-09-28T08:53:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0128",
-        "kkmId": "0007240729059417",
-        "fiscalId": "1319008393",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5494585053185408513\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20044,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-28T08:53:07.798+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22494",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:43:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3475760202",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506837064611718400\"}",
+          "sum": 382.00,
+          "payments": [
+              {
+                  "sum": 382.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 71,
+          "fiscalDocumentNumber": 22494,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:44:26.539+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 63.67
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_20043",
-        "shiftNumber": 127,
-        "transactionDate": "2024-09-27T21:00:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0127",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2253357800",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5493872972116714753\"}",
-        "sum": 56928.24,
-        "payments": [
-          {
-            "sum": 14397.4,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 42530.84,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 20043,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-27T21:00:59.309+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22493",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:43:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "251629156",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506837052794839296\"}",
+          "sum": 270.70,
+          "payments": [
+              {
+                  "sum": 270.70,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 70,
+          "fiscalDocumentNumber": 22493,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:44:25.829+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 43.07
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 1.12
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19863",
-        "shiftNumber": 127,
-        "transactionDate": "2024-09-27T08:52:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0127",
-        "kkmId": "0007240729059417",
-        "fiscalId": "884960824",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5493134975461153024\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19863,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-27T08:52:38.181+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22492",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:37:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3426762142",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506837019401381120\"}",
+          "sum": 373.00,
+          "payments": [
+              {
+                  "sum": 373.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 69,
+          "fiscalDocumentNumber": 22492,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:44:23.756+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 62.17
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19862",
-        "shiftNumber": 126,
-        "transactionDate": "2024-09-26T20:47:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0126",
-        "kkmId": "0007240729059417",
-        "fiscalId": "3307027060",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5492405022711715072\"}",
-        "sum": 36648.6,
-        "payments": [
-          {
-            "sum": 5987.4,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 30661.2,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19862,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-26T20:47:29.770+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22491",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:36:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2318528245",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506836994024912896\"}",
+          "sum": 453.00,
+          "payments": [
+              {
+                  "sum": 453.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 68,
+          "fiscalDocumentNumber": 22491,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:44:22.426+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 75.50
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19730",
-        "shiftNumber": 126,
-        "transactionDate": "2024-09-26T08:48:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0126",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2928087662",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5491681519068174592\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19730,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-26T08:48:45.459+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22490",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:25:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "869419170",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506820941841131264\"}",
+          "sum": 248.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 248.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 67,
+          "fiscalDocumentNumber": 22490,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:28:25.114+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 41.33
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19729",
-        "shiftNumber": 125,
-        "transactionDate": "2024-09-25T20:52:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0125",
-        "kkmId": "0007240729059417",
-        "fiscalId": "4093803048",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5490960560684629504\"}",
-        "sum": 29598.67,
-        "payments": [
-          {
-            "sum": 7771.8,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 21826.87,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19729,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-25T20:52:33.211+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22489",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:23:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3030991812",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506820914980927744\"}",
+          "sum": 134.00,
+          "payments": [
+              {
+                  "sum": 134.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 66,
+          "fiscalDocumentNumber": 22489,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:28:23.815+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 9.17
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 7.18
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19618",
-        "shiftNumber": 125,
-        "transactionDate": "2024-09-25T08:50:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0125",
-        "kkmId": "0007240729059417",
-        "fiscalId": "584677308",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5490233383335797760\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19618,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-25T08:50:08.252+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22488",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:22:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1286326018",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506820901529969920\"}",
+          "sum": 227.00,
+          "payments": [
+              {
+                  "sum": 227.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 65,
+          "fiscalDocumentNumber": 22488,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:28:23.099+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 37.83
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19617",
-        "shiftNumber": 124,
-        "transactionDate": "2024-09-24T21:00:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0124",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2503481818",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5489519659614320641\"}",
-        "sum": 62061.7,
-        "payments": [
-          {
-            "sum": 16326.6,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 45735.1,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19617,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-24T21:01:01.547+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22487",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:15:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3425472395",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506809006798665984\"}",
+          "sum": 299.00,
+          "payments": [
+              {
+                  "sum": 299.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 64,
+          "fiscalDocumentNumber": 22487,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:16:33.791+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 49.83
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19390",
-        "shiftNumber": 124,
-        "transactionDate": "2024-09-24T08:23:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0124",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2981401577",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5488757349511852800\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19390,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-24T08:23:51.245+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22486",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:14:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1822180492",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506806819816060929\"}",
+          "sum": 1339.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 1339.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 63,
+          "fiscalDocumentNumber": 22486,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:14:23.459+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 213.34
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 5.36
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19389",
-        "shiftNumber": 123,
-        "transactionDate": "2024-09-23T21:02:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0123",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2120386988",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5488071001395265024\"}",
-        "sum": 20369.95,
-        "payments": [
-          {
-            "sum": 4547.2,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 15822.75,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19389,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-23T21:02:01.096+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22485",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:11:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "4227957138",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506804258893443840\"}",
+          "sum": 369.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 369.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 62,
+          "fiscalDocumentNumber": 22485,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:11:51.154+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 61.50
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19309",
-        "shiftNumber": 123,
-        "transactionDate": "2024-09-23T08:19:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0123",
-        "kkmId": "0007240729059417",
-        "fiscalId": "4193331952",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5487303786533221120\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19309,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-23T08:19:52.482+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22484",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:10:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1655694496",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506803946203117824\"}",
+          "sum": 641.40,
+          "payments": [
+              {
+                  "sum": 641.40,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 61,
+          "fiscalDocumentNumber": 22484,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:11:32.664+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 106.88
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19308",
-        "shiftNumber": 122,
-        "transactionDate": "2024-09-22T20:42:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0122",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2153646433",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5486601379237779712\"}",
-        "sum": 53048.07,
-        "payments": [
-          {
-            "sum": 12071.2,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 40976.87,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19308,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-22T20:42:05.834+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22483",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:06:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3250400577",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506799317301672193\"}",
+          "sum": 1562.50,
+          "payments": [
+              {
+                  "sum": 1562.50,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 60,
+          "fiscalDocumentNumber": 22483,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:06:56.323+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 219.33
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 22.41
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19137",
-        "shiftNumber": 122,
-        "transactionDate": "2024-09-22T08:48:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0122",
-        "kkmId": "0007240729059417",
-        "fiscalId": "1736728520",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5485882910842217735\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19137,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-22T08:48:18.609+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22482",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:04:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3134383244",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506796789562423552\"}",
+          "sum": 437.70,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 437.70,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 59,
+          "fiscalDocumentNumber": 22482,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:04:25.847+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 72.96
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_19136",
-        "shiftNumber": 121,
-        "transactionDate": "2024-09-21T20:46:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0121",
-        "kkmId": "0007240729059417",
-        "fiscalId": "860826422",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5485156522868077312\"}",
-        "sum": 59259.8,
-        "payments": [
-          {
-            "sum": 13744.9,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 45514.9,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 19136,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-21T20:46:45.559+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22481",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T19:00:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "392785102",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506793536464610561\"}",
+          "sum": 1190.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 1190.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 58,
+          "fiscalDocumentNumber": 22481,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T19:01:11.935+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 198.34
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_18941",
-        "shiftNumber": 121,
-        "transactionDate": "2024-09-21T08:46:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0121",
-        "kkmId": "0007240729059417",
-        "fiscalId": "1441532080",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5484431923622024448\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 18941,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-21T08:46:56.058+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22480",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:58:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2266850615",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506791701121066241\"}",
+          "sum": 47.30,
+          "payments": [
+              {
+                  "sum": 47.30,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 57,
+          "fiscalDocumentNumber": 22480,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:59:22.649+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 7.89
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_18940",
-        "shiftNumber": 120,
-        "transactionDate": "2024-09-20T20:38:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0120",
-        "kkmId": "0007240729059417",
-        "fiscalId": "2525022179",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5483698326565864704\"}",
-        "sum": 31421.24,
-        "payments": [
-          {
-            "sum": 4869.1,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 26552.14,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 18940,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-20T20:38:10.273+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22479",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:58:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3941261643",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506790716009014528\"}",
+          "sum": 446.00,
+          "payments": [
+              {
+                  "sum": 446.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 56,
+          "fiscalDocumentNumber": 22479,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:58:19.163+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 50.66
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 12.90
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_18810",
-        "shiftNumber": 120,
-        "transactionDate": "2024-09-20T08:14:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0120",
-        "kkmId": "0007240729059417",
-        "fiscalId": "117160885",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5482949255470888960\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 18810,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-20T08:14:01.923+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22478",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:49:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2899710488",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506782392278841600\"}",
+          "sum": 39.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 39.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 55,
+          "fiscalDocumentNumber": 22478,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:50:07.267+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 6.58
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_18809",
-        "shiftNumber": 119,
-        "transactionDate": "2024-09-19T20:34:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0119",
-        "kkmId": "0007240729059417",
-        "fiscalId": "591004105",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5482245536946321666\"}",
-        "sum": 40235.9,
-        "payments": [
-          {
-            "sum": 9217.3,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 31018.6,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 18809,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-19T20:34:57.351+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22477",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:47:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "546208927",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506780510159976705\"}",
+          "sum": 743.10,
+          "payments": [
+              {
+                  "sum": 743.10,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 54,
+          "fiscalDocumentNumber": 22477,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:48:14.689+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 115.77
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 4.40
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_18653",
-        "shiftNumber": 119,
-        "transactionDate": "2024-09-19T08:16:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0119",
-        "kkmId": "0007240729059417",
-        "fiscalId": "368499191",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5481501786862967041\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 18653,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-19T08:16:06.124+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22476",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:34:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "645748471",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506767388696359682\"}",
+          "sum": 99.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 99.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 53,
+          "fiscalDocumentNumber": 22476,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:35:11.746+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 9.00
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_18652",
-        "shiftNumber": 118,
-        "transactionDate": "2024-09-18T20:58:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0118",
-        "kkmId": "0007240729059417",
-        "fiscalId": "4131618371",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5480819990566842880\"}",
-        "sum": 3269,
-        "payments": [
-          {
-            "sum": 365,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 2904,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 18652,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-18T20:58:48.170+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22475",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:34:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1276054129",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506767035703735040\"}",
+          "sum": 3.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 3.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 52,
+          "fiscalDocumentNumber": 22475,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:34:52.591+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 0.50
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_18638",
-        "shiftNumber": 118,
-        "transactionDate": "2024-09-18T08:44:00.000",
-        "transactionType": "OPEN_SHIFT",
-        "transactionDescription": "transaction.open.shift 0118",
-        "kkmId": "0007240729059417",
-        "fiscalId": "174311384",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5480081326769751296\"}",
-        "sum": null,
-        "payments": [],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 18638,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-18T08:44:59.540+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22474",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:34:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "194394464",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506766810002941184\"}",
+          "sum": 245.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 245.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 51,
+          "fiscalDocumentNumber": 22474,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:34:38.533+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 40.84
+              }
+          ]
       },
       {
-        "id": "0007240729059417_7380440700536218_18637",
-        "shiftNumber": 117,
-        "transactionDate": "2024-09-17T20:45:00.000",
-        "transactionType": "CLOSE_SHIFT",
-        "transactionDescription": "transaction.close.shift 0117",
-        "kkmId": "0007240729059417",
-        "fiscalId": "4059803900",
-        "fnsFlcStatus": "OK",
-        "fnsStatus": 200,
-        "fnsDescription": null,
-        "fnsConfirmation": "{\"fdId\":\"5479357089384594946\"}",
-        "sum": 48439.55,
-        "payments": [
-          {
-            "sum": 10166.2,
-            "paymentType": "CASH"
-          },
-          {
-            "sum": 38273.35,
-            "paymentType": "CARD"
-          },
-          {
-            "sum": 0,
-            "paymentType": "PREPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "POSTPAYMENT"
-          },
-          {
-            "sum": 0,
-            "paymentType": "COUNTERSUBMISSION"
-          }
-        ],
-        "operationType": null,
-        "requestNumber": null,
-        "fiscalDocumentNumber": 18637,
-        "userPropertyKey": null,
-        "userPropertyValue": null,
-        "insertedAt": "2024-09-17T20:45:31.667+03:00",
-        "fiscalDriveNumber": "7380440700536218",
-        "taxationType": null,
-        "taxes": []
+          "id": "0005020639032566_7380440700232870_22473",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:33:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3316238973",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506765798655583489\"}",
+          "sum": 2770.50,
+          "payments": [
+              {
+                  "sum": 2770.50,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 50,
+          "fiscalDocumentNumber": 22473,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:33:38.290+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 461.75
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22472",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:31:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2836393076",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506763691750301954\"}",
+          "sum": 671.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 671.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 49,
+          "fiscalDocumentNumber": 22472,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:31:33.145+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 111.91
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22471",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:30:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "824278397",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506763108825932033\"}",
+          "sum": 198.00,
+          "payments": [
+              {
+                  "sum": 198.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 48,
+          "fiscalDocumentNumber": 22471,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:30:58.296+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 33.00
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22470",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:25:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "4011704674",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506758031034398720\"}",
+          "sum": 338.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 338.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 47,
+          "fiscalDocumentNumber": 22470,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:25:54.304+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 39.83
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 9.00
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22469",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:18:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "244472712",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506750784825538817\"}",
+          "sum": 62.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 62.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 46,
+          "fiscalDocumentNumber": 22469,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:18:43.965+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 10.33
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22468",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:14:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3336497686",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506747131902538496\"}",
+          "sum": 262.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 262.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 45,
+          "fiscalDocumentNumber": 22468,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:15:06.233+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 23.85
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22467",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:13:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3849537324",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506745878832478464\"}",
+          "sum": 62.00,
+          "payments": [
+              {
+                  "sum": 62.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 44,
+          "fiscalDocumentNumber": 22467,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:13:51.341+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 10.33
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22466",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:12:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1192245644",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506745078620332288\"}",
+          "sum": 184.00,
+          "payments": [
+              {
+                  "sum": 184.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 43,
+          "fiscalDocumentNumber": 22466,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:13:02.737+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 30.67
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22465",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:11:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3269203825",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506743677775136000\"}",
+          "sum": 69.00,
+          "payments": [
+              {
+                  "sum": 69.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 42,
+          "fiscalDocumentNumber": 22465,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:11:40.181+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 11.50
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22464",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:10:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1373468636",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506743227780359424\"}",
+          "sum": 506.00,
+          "payments": [
+              {
+                  "sum": 506.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 41,
+          "fiscalDocumentNumber": 22464,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:11:13.508+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 84.33
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22463",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:10:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2752314942",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506742300625331457\"}",
+          "sum": 415.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 415.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 40,
+          "fiscalDocumentNumber": 22463,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:10:17.950+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 13.83
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 30.22
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22462",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:04:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "4213609427",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506736927134704896\"}",
+          "sum": 110.50,
+          "payments": [
+              {
+                  "sum": 110.50,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 39,
+          "fiscalDocumentNumber": 22462,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:04:58.011+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 11.50
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 3.77
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22461",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:03:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3148050518",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506735934792005889\"}",
+          "sum": 411.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 411.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 38,
+          "fiscalDocumentNumber": 22461,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:03:58.435+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 68.49
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22460",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:02:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "4048548257",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506734913596422400\"}",
+          "sum": 366.00,
+          "payments": [
+              {
+                  "sum": 366.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 37,
+          "fiscalDocumentNumber": 22460,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:02:57.791+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 61.00
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22459",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:02:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "39684420",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506734419000050944\"}",
+          "sum": 134.70,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 134.70,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 36,
+          "fiscalDocumentNumber": 22459,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:02:28.067+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 20.16
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 1.25
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22458",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T18:01:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1632496469",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506733611124760834\"}",
+          "sum": 110.40,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 110.40,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 35,
+          "fiscalDocumentNumber": 22458,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T18:01:37.696+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 11.50
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 3.76
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22457",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:57:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "982300763",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506729612199672320\"}",
+          "sum": 91.30,
+          "payments": [
+              {
+                  "sum": 91.30,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 34,
+          "fiscalDocumentNumber": 22457,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:57:41.553+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 10.65
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 2.49
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22456",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:35:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2253705176",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506707604107927808\"}",
+          "sum": 79.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 79.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 33,
+          "fiscalDocumentNumber": 22456,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:35:50.015+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 13.17
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22455",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:35:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3544328054",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506707282712852736\"}",
+          "sum": 149.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 149.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 32,
+          "fiscalDocumentNumber": 22455,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:35:31.117+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 24.83
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22454",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:35:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1555353499",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506707267478698241\"}",
+          "sum": 230.80,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 230.80,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 31,
+          "fiscalDocumentNumber": 22454,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:35:30.096+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 1.00
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 20.43
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22453",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:28:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3587373709",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506700421070316802\"}",
+          "sum": 372.70,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 372.70,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 30,
+          "fiscalDocumentNumber": 22453,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:28:42.002+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 62.12
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22452",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:20:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1604342844",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506692193331688192\"}",
+          "sum": 138.50,
+          "payments": [
+              {
+                  "sum": 138.50,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 29,
+          "fiscalDocumentNumber": 22452,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:20:29.925+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 6.58
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 9.00
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22451",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:19:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3959271446",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506691865759529216\"}",
+          "sum": 216.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 216.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 28,
+          "fiscalDocumentNumber": 22451,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:20:11.235+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 35.99
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22450",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:19:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "4124622012",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506690926399603968\"}",
+          "sum": 316.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 316.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 27,
+          "fiscalDocumentNumber": 22450,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:19:15.774+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 27.92
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 13.55
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22449",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:17:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "901005344",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506689171271973120\"}",
+          "sum": 793.90,
+          "payments": [
+              {
+                  "sum": 793.90,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 26,
+          "fiscalDocumentNumber": 22449,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:17:31.380+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 132.33
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22448",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:10:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2826270397",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506682521856850176\"}",
+          "sum": 672.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 672.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 25,
+          "fiscalDocumentNumber": 22448,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:10:53.924+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 112.00
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22447",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:07:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3349162946",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506679150336129024\"}",
+          "sum": 522.00,
+          "payments": [
+              {
+                  "sum": 522.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 24,
+          "fiscalDocumentNumber": 22447,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:07:33.544+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 87.00
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22446",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:06:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3542942404",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506677861901220096\"}",
+          "sum": 116.00,
+          "payments": [
+              {
+                  "sum": 116.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 23,
+          "fiscalDocumentNumber": 22446,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:06:17.294+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 19.33
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22445",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:05:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3793600798",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506677152001270016\"}",
+          "sum": 118.00,
+          "payments": [
+              {
+                  "sum": 118.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 22,
+          "fiscalDocumentNumber": 22445,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:05:34.863+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 10.72
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22444",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T17:02:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "377056459",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506674789978814976\"}",
+          "sum": 190.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 190.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 21,
+          "fiscalDocumentNumber": 22444,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:03:12.634+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 31.75
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22443",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T16:59:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1616513904",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506672093318324480\"}",
+          "sum": 87.00,
+          "payments": [
+              {
+                  "sum": 87.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 20,
+          "fiscalDocumentNumber": 22443,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T17:00:33.342+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 14.50
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22442",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T16:59:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "411736581",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506670919371679488\"}",
+          "sum": 730.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 730.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 19,
+          "fiscalDocumentNumber": 22442,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T16:59:23.272+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 121.75
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22441",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:35:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1906102211",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506406003473725696\"}",
+          "sum": 189.80,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 189.80,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 18,
+          "fiscalDocumentNumber": 22441,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:36:12.355+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 16.50
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 8.25
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22440",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:35:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1706884536",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506405210931217664\"}",
+          "sum": 349.00,
+          "payments": [
+              {
+                  "sum": 349.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 17,
+          "fiscalDocumentNumber": 22440,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:35:23.588+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 58.17
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22439",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:34:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2312167666",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506404046411360002\"}",
+          "sum": 261.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 261.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 16,
+          "fiscalDocumentNumber": 22439,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:34:16.754+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 43.50
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22438",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:33:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3153385254",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506403709508204801\"}",
+          "sum": 186.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 186.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 15,
+          "fiscalDocumentNumber": 22438,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:33:56.556+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 31.00
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22437",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:33:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1485019340",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506403133843421184\"}",
+          "sum": 400.00,
+          "payments": [
+              {
+                  "sum": 400.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 14,
+          "fiscalDocumentNumber": 22437,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:33:22.184+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 66.68
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22436",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:32:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2315742548",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506402339262642433\"}",
+          "sum": 117.60,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 117.60,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 13,
+          "fiscalDocumentNumber": 22436,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:32:33.351+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 10.84
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 4.78
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22435",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:31:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2086593440",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506401481656743937\"}",
+          "sum": 79.00,
+          "payments": [
+              {
+                  "sum": 79.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 12,
+          "fiscalDocumentNumber": 22435,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:31:43.536+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 13.16
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22434",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:31:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3589003462",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506401141738399489\"}",
+          "sum": 285.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 285.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 11,
+          "fiscalDocumentNumber": 22434,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:31:23.311+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 26.84
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 11.31
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22433",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:29:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3394647913",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506399138035492608\"}",
+          "sum": 437.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 437.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 10,
+          "fiscalDocumentNumber": 22433,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:29:23.809+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 72.83
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22432",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:27:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1343278103",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506397600135772416\"}",
+          "sum": 79.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 79.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 9,
+          "fiscalDocumentNumber": 22432,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:27:52.260+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 13.17
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22431",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:21:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "1277907586",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506391250009286400\"}",
+          "sum": 59.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 59.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 8,
+          "fiscalDocumentNumber": 22431,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:21:33.856+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 9.83
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22430",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:20:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "88683970",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506390168429020418\"}",
+          "sum": 1253.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 1253.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 7,
+          "fiscalDocumentNumber": 22430,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:20:29.113+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 44.68
+              },
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 89.55
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22429",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:19:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3358302158",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506388936418911488\"}",
+          "sum": 511.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 511.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 6,
+          "fiscalDocumentNumber": 22429,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:19:15.437+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 85.17
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22428",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:18:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "4231655608",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506388011251852544\"}",
+          "sum": 431.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 431.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 5,
+          "fiscalDocumentNumber": 22428,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:18:20.440+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 71.91
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22427",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:14:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "4171798517",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506384291353478401\"}",
+          "sum": 41.50,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 41.50,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 4,
+          "fiscalDocumentNumber": 22427,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:14:39.176+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 3.77
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22426",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:13:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+          "kkmId": "0005020639032566",
+          "fiscalId": "2253557320",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506382934261871360\"}",
+          "sum": 273.00,
+          "payments": [
+              {
+                  "sum": 0.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 273.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 3,
+          "fiscalDocumentNumber": 22426,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:13:18.012+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 45.50
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22425",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:10:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "664367648",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506379924532967680\"}",
+          "sum": 178.00,
+          "payments": [
+              {
+                  "sum": 178.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 2,
+          "fiscalDocumentNumber": 22425,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:10:18.498+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.20,
+                  "name": "НДС 20%",
+                  "sum": 29.67
+              }
+          ]
+      },
+      {
+          "id": "0005020639032566_7380440700232870_22424",
+          "shiftNumber": 180,
+          "transactionDate": "2024-10-06T12:01:00.000",
+          "transactionType": "TICKET",
+          "transactionDescription": "transaction.ticket.sell, transaction.ticket.payment.type.cash",
+          "kkmId": "0005020639032566",
+          "fiscalId": "3787998125",
+          "fnsFlcStatus": "OK",
+          "fnsStatus": 200,
+          "fnsDescription": null,
+          "fnsConfirmation": "{\"fdId\":\"5506370987362957824\"}",
+          "sum": 79.00,
+          "payments": [
+              {
+                  "sum": 79.00,
+                  "paymentType": "CASH"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "CARD"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "PREPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "POSTPAYMENT"
+              },
+              {
+                  "sum": 0.00,
+                  "paymentType": "COUNTERSUBMISSION"
+              }
+          ],
+          "operationType": 2,
+          "requestNumber": 1,
+          "fiscalDocumentNumber": 22424,
+          "userPropertyKey": null,
+          "userPropertyValue": null,
+          "insertedAt": "2024-10-06T12:01:25.790+03:00",
+          "fiscalDriveNumber": "7380440700232870",
+          "taxationType": 1,
+          "taxes": [
+              {
+                  "rate": 0.10,
+                  "name": "НДС 10%",
+                  "sum": 7.18
+              }
+          ]
       }
-    ],
-    "pagination": {
-      "totalItems": 263,
-      "pageSize": 30,
+  ],
+  "pagination": {
+      "totalItems": 79,
+      "pageSize": 120,
       "currentPage": null
-    }
   }
+}

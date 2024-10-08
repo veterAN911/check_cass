@@ -4,6 +4,7 @@ from tkinter import messagebox
 import cash_postgresql
 import json
 import zapros_OFD
+import parser_check
 
 def extract_last_value(string):
     parts = string.split('_')
@@ -36,7 +37,7 @@ def send_data():
         list1 = [int(i) for i in list1]
         set1 = set(list1)
         set2 = set(list2)
-        set_text_to_entry_logi("Сверяются данные из ОФД и БД кассы")
+        set_text_to_entry_logi("\nСверяются данные из ОФД и БД кассы")
         missing_elements = list(set1 - set2)
         if(missing_elements == []):
             messagebox.showinfo("Результат", "Смены сверены с ОФД расхождений нету")
@@ -47,6 +48,9 @@ def send_data():
                 for i in range(len(missing_elements)):
                     num_check = f"{prefix_cass}_{str(missing_elements[i])}"
                     set_text_to_entry_logi(f"\nФормируем чек {num_check}")
+                    check = zapros_OFD.select_ofd_check(num_check)
+                    parser_check.pars_check(check)
+                    messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
             else:
                 set_text_to_entry_logi("\nОставляем смену")
     elif connOFD == "Азбука Вкус":

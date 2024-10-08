@@ -1,422 +1,575 @@
-<TransactionPage>
-<transactions>
-<transactions>
-<id>0007240729059417_7380440700536218_20668</id>
-<shiftNumber>131</shiftNumber>
-<transactionDate>2024-10-01T09: 54: 00.000</transactionDate>
-<transactionType>TICKET</transactionType>
-<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
-<kkmId>0007240729059417</kkmId>
-<fiscalId>3906120888</fiscalId>
-<fnsFlcStatus>OK</fnsFlcStatus>
-<fnsStatus>200</fnsStatus>
-<fnsDescription/>
-<fnsConfirmation>{
-    "fdId": "5498995785802638592"
-}</fnsConfirmation>
-<sum>62.00</sum>
-<payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>CASH</paymentType>
-</payments>
-<payments>
-<sum>62.00</sum>
-<paymentType>CARD</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>PREPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>POSTPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>COUNTERSUBMISSION</paymentType>
-</payments>
-</payments>
-<operationType>2</operationType>
-<requestNumber>8</requestNumber>
-<fiscalDocumentNumber>20668</fiscalDocumentNumber>
-<userPropertyKey/>
-<userPropertyValue/>
-<insertedAt>2024-10-01T09: 54: 49.592+03: 00</insertedAt>
-<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
-<taxationType>1</taxationType>
-<taxes>
-<rate>0.20</rate>
-<name>НДС 20%</name>
-<sum>10.33</sum>
-</taxes>
-</transactions>
-<transactions>
-<id>0007240729059417_7380440700536218_20667</id>
-<shiftNumber>131</shiftNumber>
-<transactionDate>2024-10-01T09: 53: 00.000</transactionDate>
-<transactionType>TICKET</transactionType>
-<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
-<kkmId>0007240729059417</kkmId>
-<fiscalId>1656008823</fiscalId>
-<fnsFlcStatus>OK</fnsFlcStatus>
-<fnsStatus>200</fnsStatus>
-<fnsDescription/>
-<fnsConfirmation>{
-    "fdId": "5498994151379940096"
-}</fnsConfirmation>
-<sum>128.00</sum>
-<payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>CASH</paymentType>
-</payments>
-<payments>
-<sum>128.00</sum>
-<paymentType>CARD</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>PREPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>POSTPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>COUNTERSUBMISSION</paymentType>
-</payments>
-</payments>
-<operationType>2</operationType>
-<requestNumber>7</requestNumber>
-<fiscalDocumentNumber>20667</fiscalDocumentNumber>
-<userPropertyKey/>
-<userPropertyValue/>
-<insertedAt>2024-10-01T09: 53: 11.450+03: 00</insertedAt>
-<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
-<taxationType>1</taxationType>
-<taxes>
-<rate>0.20</rate>
-<name>НДС 20%</name>
-<sum>21.33</sum>
-</taxes>
-</transactions>
-<transactions>
-<id>0007240729059417_7380440700536218_20666</id>
-<shiftNumber>131</shiftNumber>
-<transactionDate>2024-10-01T09: 40: 00.000</transactionDate>
-<transactionType>TICKET</transactionType>
-<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
-<kkmId>0007240729059417</kkmId>
-<fiscalId>1453217969</fiscalId>
-<fnsFlcStatus>OK</fnsFlcStatus>
-<fnsStatus>200</fnsStatus>
-<fnsDescription/>
-<fnsConfirmation>{
-    "fdId": "5498981267700824065"
-}</fnsConfirmation>
-<sum>186.00</sum>
-<payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>CASH</paymentType>
-</payments>
-<payments>
-<sum>186.00</sum>
-<paymentType>CARD</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>PREPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>POSTPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>COUNTERSUBMISSION</paymentType>
-</payments>
-</payments>
-<operationType>2</operationType>
-<requestNumber>6</requestNumber>
-<fiscalDocumentNumber>20666</fiscalDocumentNumber>
-<userPropertyKey/>
-<userPropertyValue/>
-<insertedAt>2024-10-01T09: 40: 12.535+03: 00</insertedAt>
-<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
-<taxationType>1</taxationType>
-<taxes>
-<rate>0.20</rate>
-<name>НДС 20%</name>
-<sum>31.00</sum>
-</taxes>
-</transactions>
-<transactions>
-<id>0007240729059417_7380440700536218_20665</id>
-<shiftNumber>131</shiftNumber>
-<transactionDate>2024-10-01T09: 36: 00.000</transactionDate>
-<transactionType>TICKET</transactionType>
-<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
-<kkmId>0007240729059417</kkmId>
-<fiscalId>3760085504</fiscalId>
-<fnsFlcStatus>OK</fnsFlcStatus>
-<fnsStatus>200</fnsStatus>
-<fnsDescription/>
-<fnsConfirmation>{
-    "fdId": "5498977288734356224"
-}</fnsConfirmation>
-<sum>39.50</sum>
-<payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>CASH</paymentType>
-</payments>
-<payments>
-<sum>39.50</sum>
-<paymentType>CARD</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>PREPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>POSTPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>COUNTERSUBMISSION</paymentType>
-</payments>
-</payments>
-<operationType>2</operationType>
-<requestNumber>5</requestNumber>
-<fiscalDocumentNumber>20665</fiscalDocumentNumber>
-<userPropertyKey/>
-<userPropertyValue/>
-<insertedAt>2024-10-01T09: 36: 26.254+03: 00</insertedAt>
-<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
-<taxationType>1</taxationType>
-<taxes>
-<rate>0.10</rate>
-<name>НДС 10%</name>
-<sum>3.59</sum>
-</taxes>
-</transactions>
-<transactions>
-<id>0007240729059417_7380440700536218_20664</id>
-<shiftNumber>131</shiftNumber>
-<transactionDate>2024-10-01T09: 31: 00.000</transactionDate>
-<transactionType>TICKET</transactionType>
-<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
-<kkmId>0007240729059417</kkmId>
-<fiscalId>3788498359</fiscalId>
-<fnsFlcStatus>OK</fnsFlcStatus>
-<fnsStatus>200</fnsStatus>
-<fnsDescription/>
-<fnsConfirmation>{
-    "fdId": "5498972602726802688"
-}</fnsConfirmation>
-<sum>59.00</sum>
-<payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>CASH</paymentType>
-</payments>
-<payments>
-<sum>59.00</sum>
-<paymentType>CARD</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>PREPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>POSTPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>COUNTERSUBMISSION</paymentType>
-</payments>
-</payments>
-<operationType>2</operationType>
-<requestNumber>4</requestNumber>
-<fiscalDocumentNumber>20664</fiscalDocumentNumber>
-<userPropertyKey/>
-<userPropertyValue/>
-<insertedAt>2024-10-01T09: 31: 45.555+03: 00</insertedAt>
-<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
-<taxationType>1</taxationType>
-<taxes>
-<rate>0.20</rate>
-<name>НДС 20%</name>
-<sum>9.84</sum>
-</taxes>
-</transactions>
-<transactions>
-<id>0007240729059417_7380440700536218_20663</id>
-<shiftNumber>131</shiftNumber>
-<transactionDate>2024-10-01T09: 29: 00.000</transactionDate>
-<transactionType>TICKET</transactionType>
-<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
-<kkmId>0007240729059417</kkmId>
-<fiscalId>4077539615</fiscalId>
-<fnsFlcStatus>OK</fnsFlcStatus>
-<fnsStatus>200</fnsStatus>
-<fnsDescription/>
-<fnsConfirmation>{
-    "fdId": "5498970132955347456"
-}</fnsConfirmation>
-<sum>134.00</sum>
-<payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>CASH</paymentType>
-</payments>
-<payments>
-<sum>134.00</sum>
-<paymentType>CARD</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>PREPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>POSTPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>COUNTERSUBMISSION</paymentType>
-</payments>
-</payments>
-<operationType>2</operationType>
-<requestNumber>3</requestNumber>
-<fiscalDocumentNumber>20663</fiscalDocumentNumber>
-<userPropertyKey/>
-<userPropertyValue/>
-<insertedAt>2024-10-01T09: 29: 20.353+03: 00</insertedAt>
-<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
-<taxationType>1</taxationType>
-<taxes>
-<rate>0.20</rate>
-<name>НДС 20%</name>
-<sum>22.34</sum>
-</taxes>
-</transactions>
-<transactions>
-<id>0007240729059417_7380440700536218_20662</id>
-<shiftNumber>131</shiftNumber>
-<transactionDate>2024-10-01T09: 28: 00.000</transactionDate>
-<transactionType>TICKET</transactionType>
-<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.cash</transactionDescription>
-<kkmId>0007240729059417</kkmId>
-<fiscalId>803126918</fiscalId>
-<fnsFlcStatus>OK</fnsFlcStatus>
-<fnsStatus>200</fnsStatus>
-<fnsDescription/>
-<fnsConfirmation>{
-    "fdId": "5498968911688951040"
-}</fnsConfirmation>
-<sum>215.00</sum>
-<payments>
-<payments>
-<sum>215.00</sum>
-<paymentType>CASH</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>CARD</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>PREPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>POSTPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>COUNTERSUBMISSION</paymentType>
-</payments>
-</payments>
-<operationType>2</operationType>
-<requestNumber>2</requestNumber>
-<fiscalDocumentNumber>20662</fiscalDocumentNumber>
-<userPropertyKey/>
-<userPropertyValue/>
-<insertedAt>2024-10-01T09: 28: 07.549+03: 00</insertedAt>
-<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
-<taxationType>1</taxationType>
-<taxes>
-<rate>0.20</rate>
-<name>НДС 20%</name>
-<sum>35.84</sum>
-</taxes>
-</transactions>
-<transactions>
-<id>0007240729059417_7380440700536218_20661</id>
-<shiftNumber>131</shiftNumber>
-<transactionDate>2024-10-01T09: 04: 00.000</transactionDate>
-<transactionType>TICKET</transactionType>
-<transactionDescription>transaction.ticket.sell, transaction.ticket.payment.type.card</transactionDescription>
-<kkmId>0007240729059417</kkmId>
-<fiscalId>4133536982</fiscalId>
-<fnsFlcStatus>OK</fnsFlcStatus>
-<fnsStatus>200</fnsStatus>
-<fnsDescription/>
-<fnsConfirmation>{
-    "fdId": "5498944629215834880"
-}</fnsConfirmation>
-<sum>187.50</sum>
-<payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>CASH</paymentType>
-</payments>
-<payments>
-<sum>187.50</sum>
-<paymentType>CARD</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>PREPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>POSTPAYMENT</paymentType>
-</payments>
-<payments>
-<sum>0.00</sum>
-<paymentType>COUNTERSUBMISSION</paymentType>
-</payments>
-</payments>
-<operationType>2</operationType>
-<requestNumber>1</requestNumber>
-<fiscalDocumentNumber>20661</fiscalDocumentNumber>
-<userPropertyKey/>
-<userPropertyValue/>
-<insertedAt>2024-10-01T09: 04: 00.482+03: 00</insertedAt>
-<fiscalDriveNumber>7380440700536218</fiscalDriveNumber>
-<taxationType>1</taxationType>
-<taxes>
-<rate>0.20</rate>
-<name>НДС 20%</name>
-<sum>22.08</sum>
-</taxes>
-<taxes>
-<rate>0.10</rate>
-<name>НДС 10%</name>
-<sum>5.00</sum>
-</taxes>
-</transactions>
-</transactions>
-<pagination>
-<totalItems>128</totalItems>
-<pageSize>120</pageSize>
-<currentPage/>
-</pagination>
-</TransactionPage>
+{
+    "ticket": {
+        "requestPayload": null,
+        "responsePayload": null,
+        "acceptedAt": "2024-10-06T19:14:23.459+03:00",
+        "insertedAt": "2024-10-06T19:14:23.459+03:00",
+        "fs21": "gQaCs69Tcac=",
+        "header21": "pQMBEAlzgEQHACMocABX1rpJsgLdAFaVAAkFSA==",
+        "protocolVersion": 288,
+        "items": [
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Ручка-стилус с фонариком,3AG3вкомпИМП",
+                    "sum": "7900",
+                    "price": "7900",
+                    "ndsRate": "1",
+                    "ndsSum": "1317",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 1317,
+                "quantity": 1.0,
+                "price": 7900,
+                "name": "Ручка-стилус с фонариком,3AG3вкомпИМП",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 13.17
+                    }
+                ],
+                "sum": 7900,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Карамель Пчелка-Ball с нач. микс 180г",
+                    "sum": "4350",
+                    "price": "4350",
+                    "ndsRate": "1",
+                    "ndsSum": "725",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 725,
+                "quantity": 1.0,
+                "price": 4350,
+                "name": "Карамель Пчелка-Ball с нач. микс 180г",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 7.25
+                    }
+                ],
+                "sum": 4350,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Пакет  \"Майка\" большая",
+                    "sum": "600",
+                    "price": "600",
+                    "ndsRate": "1",
+                    "ndsSum": "100",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 100,
+                "quantity": 1.0,
+                "price": 600,
+                "name": "Пакет  \"Майка\" большая",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 1.00
+                    }
+                ],
+                "sum": 600,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Набор обл. для днев. и тет 15шт Стамм",
+                    "sum": "5900",
+                    "price": "5900",
+                    "ndsRate": "2",
+                    "ndsSum": "536",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 2,
+                "ndsSum": 536,
+                "quantity": 1.0,
+                "price": 5900,
+                "name": "Набор обл. для днев. и тет 15шт Стамм",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 10%",
+                            "printedName": "НДС 10%",
+                            "rate": 0.10
+                        },
+                        "sum": 5.36
+                    }
+                ],
+                "sum": 5900,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Полотенце махр50*90Нордтекс",
+                    "sum": "34900",
+                    "price": "34900",
+                    "ndsRate": "1",
+                    "ndsSum": "5817",
+                    "calculationSubjectSign": "33",
+                    "calculationTypeSign": "4",
+                    "markingCodeProcessingMode": "0",
+                    "checkResultSubjectDetails": "15",
+                    "quantityMeasure": "0"
+                },
+                "markingCodeProcessingMode": 0,
+                "quantityMeasure": 0,
+                "subjectCode": {
+                    "ktGS1M": "0104650310550953215639045612755"
+                },
+                "checkResultSubjectDetails": 15,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 5817,
+                "quantity": 1.0,
+                "price": 34900,
+                "name": "Полотенце махр50*90Нордтекс",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 58.17
+                    }
+                ],
+                "sum": 34900,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 33
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Полотенце 35*60Эталон",
+                    "sum": "9900",
+                    "price": "9900",
+                    "ndsRate": "1",
+                    "ndsSum": "1650",
+                    "calculationSubjectSign": "33",
+                    "calculationTypeSign": "4",
+                    "markingCodeProcessingMode": "0",
+                    "checkResultSubjectDetails": "0",
+                    "quantityMeasure": "0"
+                },
+                "markingCodeProcessingMode": 0,
+                "quantityMeasure": 0,
+                "subjectCode": {
+                    "ktGS1M": "0104620214151358215H83Ci\"VDA7cr"
+                },
+                "checkResultSubjectDetails": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 1650,
+                "quantity": 1.0,
+                "price": 9900,
+                "name": "Полотенце 35*60Эталон",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 16.50
+                    }
+                ],
+                "sum": 9900,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 33
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Пенал с тремя отделениями",
+                    "sum": "29900",
+                    "price": "29900",
+                    "ndsRate": "1",
+                    "ndsSum": "4983",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 4983,
+                "quantity": 1.0,
+                "price": 29900,
+                "name": "Пенал с тремя отделениями",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 49.83
+                    }
+                ],
+                "sum": 29900,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Арахис в хруст.корочкеХрустNUT 80гр ассо",
+                    "sum": "2750",
+                    "price": "2750",
+                    "ndsRate": "1",
+                    "ndsSum": "458",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 458,
+                "quantity": 1.0,
+                "price": 2750,
+                "name": "Арахис в хруст.корочкеХрустNUT 80гр ассо",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 4.58
+                    }
+                ],
+                "sum": 2750,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Ножницы для детского творчества,1шт. ИМП",
+                    "sum": "7900",
+                    "price": "7900",
+                    "ndsRate": "1",
+                    "ndsSum": "1317",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 1317,
+                "quantity": 1.0,
+                "price": 7900,
+                "name": "Ножницы для детского творчества,1шт. ИМП",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 13.17
+                    }
+                ],
+                "sum": 7900,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Степлер со скобами Berlingo РЕЛЬЕФ",
+                    "sum": "19900",
+                    "price": "19900",
+                    "ndsRate": "1",
+                    "ndsSum": "3317",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 3317,
+                "quantity": 1.0,
+                "price": 19900,
+                "name": "Степлер со скобами Berlingo РЕЛЬЕФ",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 33.17
+                    }
+                ],
+                "sum": 19900,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Отбеливающая з/паста Sadoer 100г",
+                    "sum": "9900",
+                    "price": "9900",
+                    "ndsRate": "1",
+                    "ndsSum": "1650",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "ndsRate": 1,
+                "ndsSum": 1650,
+                "quantity": 1.0,
+                "price": 9900,
+                "name": "Отбеливающая з/паста Sadoer 100г",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 16.50
+                    }
+                ],
+                "sum": 9900,
+                "calculationTypeSign": 4,
+                "calculationSubjectSign": 1
+            }
+        ],
+        "operatorPhoneToTransfer": [],
+        "paymentAgentPhone": [],
+        "operatorPhoneToReceive": [],
+        "providerPhone": [],
+        "checkResults": 1,
+        "industryReceiptRequisite": [],
+        "user": "ООО \"Бэст Прайс\"",
+        "operationType": 2,
+        "taxationType": 1,
+        "retailPlace": "Магазин #5934",
+        "retailPlaceAddress": "181110, Псковская обл., рп. Струги Красные, ул. Советская  д. 13",
+        "fnsUrl": "www.nalog.gov.ru",
+        "userInn": "5047085094",
+        "requestNumber": 63,
+        "agent": {
+            "operatorPhoneToTransfer": [],
+            "paymentAgentPhone": [],
+            "operatorPhoneToReceive": []
+        },
+        "qrCode": "t=20241006T1914&s=1339.00&fn=7380440700232870&i=22486&fp=1822180492&n=1",
+        "type": "TICKET",
+        "kktRegId": "0005020639032566    ",
+        "fiscalDriveNumber": "7380440700232870",
+        "shiftNumber": 180,
+        "options": {
+            "retailPlaceAddress": "181110, Псковская обл., рп. Струги Красные, ул. Советская  д. 13",
+            "dateTime": "1728242040",
+            "userInn": "5047085094",
+            "totalSum": "133900",
+            "operator": "кассир Никульникова",
+            "cashTotalSum": "0",
+            "kktRegId": "0005020639032566",
+            "shiftNumber": "180",
+            "fiscalDocumentNumber": "22486",
+            "fiscalDriveNumber": "7380440700232870",
+            "requestNumber": "63",
+            "user": "ООО \"Бэст Прайс\"",
+            "operationType": "1",
+            "taxationType": "1",
+            "fnsUrl": "www.nalog.gov.ru",
+            "fiscalSign": "31 04 6c 9c 44 8c",
+            "ecashTotalSum": "133900",
+            "nds18": "21334",
+            "nds10": "536",
+            "retailPlace": "Магазин #5934",
+            "protocolVersion": "4",
+            "prepaymentSum": "0",
+            "postpaymentSum": "0",
+            "counterSubmissionSum": "0",
+            "checkResults": "1",
+            "extras": {
+                "fnsStatus": {
+                    "status": "200",
+                    "confirmation": "{\"fdId\":\"5506806819816060929\"}",
+                    "confirmationDate": "2024-10-06T19:14:24.482",
+                    "receiver": "0"
+                },
+                "aggregation": {
+                    "sum": "1339",
+                    "cashSum": "0",
+                    "ecashSum": "1339",
+                    "prepaymentSum": "0",
+                    "postpaymentSum": "0",
+                    "countersubmissionSum": "0",
+                    "totalClearing": "1339"
+                }
+            },
+            "senderAddress": "echeck@1-ofd.ru",
+            "asOf": "2024-04-10 14:12:14.86400",
+            "kktNumber": "0128073696",
+            "orgId": "3028"
+        },
+        "transactionId": "0005020639032566_7380440700232870_22486",
+        "transactionDate": "2024-10-06T19:14:00",
+        "kkmId": "0005020639032566",
+        "fiscalId": "1822180492",
+        "fiscalDocumentNumber": 22486,
+        "header21Bytes": null,
+        "fs21Bytes": null,
+        "field1209": 4,
+        "eligibleForNds20": true,
+        "totalSum": 1339.00,
+        "payments": [
+            {
+                "sum": 0.00,
+                "paymentType": "CASH"
+            },
+            {
+                "sum": 1339.00,
+                "paymentType": "CARD"
+            },
+            {
+                "sum": 0.00,
+                "paymentType": "PREPAYMENT"
+            },
+            {
+                "sum": 0.00,
+                "paymentType": "POSTPAYMENT"
+            },
+            {
+                "sum": 0.00,
+                "paymentType": "COUNTERSUBMISSION"
+            }
+        ],
+        "ecashTotalSum": 1339.00,
+        "postpaymentSum": 0.00,
+        "prepaymentSum": 0.00,
+        "counterSubmissionSum": 0.00,
+        "cashTotalSum": 0.00,
+        "taxes": [
+            {
+                "layout": {
+                    "type": "НДС 20%",
+                    "printedName": "СУММА НДС 20%",
+                    "rate": 0.20
+                },
+                "sum": 213.34
+            },
+            {
+                "layout": {
+                    "type": "НДС 10%",
+                    "printedName": "СУММА НДС 10%",
+                    "rate": 0.10
+                },
+                "sum": 5.36
+            }
+        ],
+        "nds20": 213.34,
+        "nds10": 5.36,
+        "totalTax": 218.70,
+        "operator": "кассир Никульникова"
+    },
+    "ticketDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
+    "orgTitle": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"БЭСТ ПРАЙС\"",
+    "orgId": "5047085094",
+    "retailPlaceAddress": "181110, Псковская обл., рп. Струги Красные, ул. Советская  д. 13",
+    "kkmSerialNumber": "0128073696",
+    "kkmFnsId": "0005020639032566",
+    "kkmExtraInfo": {
+        "updatedAt": "2024-04-10T13:26:31.603+03:00",
+        "kkmId": 717323,
+        "fnsUrl": "www.nalog.gov.ru",
+        "senderAddress": "echeck@1-ofd.ru",
+        "protocolVersion1209": 4,
+        "owner": {
+            "id": 0,
+            "type": "UNKNOWN",
+            "title": "ООО \"Бэст Прайс\"",
+            "inn": "5047085094",
+            "keys": [
+                {
+                    "value": "5047085094",
+                    "kind": "INN"
+                }
+            ],
+            "externalId": {
+                "value": "5047085094",
+                "kind": "INN"
+            },
+            "fullTitle": "ООО \"Бэст Прайс\""
+        },
+        "retailPlace": "Магазин #5934",
+        "retailPlaceAddress": "181110, Псковская обл., рп. Струги Красные, ул. Советская  д. 13",
+        "effectiveFrom": "2024-04-10T13:21:00",
+        "offlineMode": 0,
+        "lotteryMode": 1,
+        "gamblingMode": 0,
+        "agentMode": 0,
+        "autoMode": 0,
+        "taxationType": 1,
+        "bsoSign": 0,
+        "encryptionSign": 0,
+        "serviceSign": 0,
+        "printerMode": 0,
+        "markingStatus": 1,
+        "lombardMode": 0,
+        "insuranceMode": 0,
+        "transactionId": "0005020639032566_7380440700232870_1",
+        "transactionType": "FISCAL_REPORT_CORRECTION",
+        "kktVersion": "002",
+        "fiscalDriveVersion": 4,
+        "excise": true,
+        "internetSign": 0,
+        "protocolVersion": "1.2"
+    },
+    "fnsFlcStatus": "OK"
+}

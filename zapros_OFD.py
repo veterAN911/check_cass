@@ -2,7 +2,10 @@ import requests
 import time
 import json
 
+global_session = None
+
 def authorize(log,pas):
+    global global_session
     login_url = 'https://org.1-ofd.ru/api/cp-core/user/login'
     payload = {"login": log, "password": pas}
     session = requests.Session()
@@ -10,6 +13,7 @@ def authorize(log,pas):
     
     if response.status_code == 200:
         print("Авторизация успешна")
+        global_session = session
         return session
     else:
         print("Авторизация не удалась")
@@ -53,3 +57,6 @@ def search_shift_all(log, pas, factorynum, num_shift):
 
 def select_ofd_check(check):
     zapros = f"https://org.1-ofd.ru/api/cp-ofd/ticket/{check}"
+    response = global_session.get(zapros)
+    data = response.json()
+    return data
