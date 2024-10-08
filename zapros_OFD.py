@@ -53,7 +53,3 @@ def search_shift_all(log, pas, factorynum, num_shift):
 
 def select_ofd_check(check):
     zapros = f"https://org.1-ofd.ru/api/cp-ofd/ticket/{check}"
-
-#search_shift_cass_30(cass, session)
-#print(num_smen("192.168.56.105","postgres","postgres","51654"))
-#print(search_shift_all("schernyshev@fix-price.ru","System99","0005020639032566","180"))
