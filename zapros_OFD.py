@@ -14,6 +14,8 @@ def authorize(log,pas):
     else:
         print("Авторизация не удалась")
         return None
+    
+
 
 def search_cass(factorynum,session):
     # URL для POST запроса авторизации
@@ -34,12 +36,6 @@ def search_shift_cass_30(cass,session):
         else:
             print("Найдена смена №", data['transactions'][i]['shiftNumber'], "номер фискального документа открытия смены ", data['transactions'][i]['fiscalDocumentNumber'])
 
-def extract_last_value(string):
-    # Разделить строку по символу '_'
-    parts = string.split('_')
-    # Получить последний элемент из списка parts
-    last_value = parts[-1]
-    return last_value
 
 def search_shift(cass,num_shift,session):
     last_values = []
@@ -47,17 +43,16 @@ def search_shift(cass,num_shift,session):
     payload = {'shiftNumber': num_shift,'transactionTypes': 'BSO,TICKET','page': 1,'pageSize': 120}
     response = session.get(search_shift)
     data = response.json()
-    for i in range(data['pagination']['totalItems']):
-        last_value = extract_last_value(data['transactions'][i]['id'])
-        last_values.append(last_value)
-    return last_values
+    return data
 
 def search_shift_all(log, pas, factorynum, num_shift):
     session = authorize(log, pas)
     cass = search_cass(factorynum, session)
-    #search_shift_cass_30(cass, session)
     check_num = search_shift(cass, num_shift, session)
     return check_num
+
+def select_ofd_check(check):
+    zapros = f"https://org.1-ofd.ru/api/cp-ofd/ticket/{check}"
 
 #search_shift_cass_30(cass, session)
 #print(num_smen("192.168.56.105","postgres","postgres","51654"))
