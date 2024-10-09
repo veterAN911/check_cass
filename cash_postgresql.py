@@ -51,6 +51,7 @@ def new_cap_check(conn,id,data,fiscal_num,summ_check,qr):
                         0,{summ_check},{summ_check},0,0,-1,'t',NULL,NULL,{fiscal_num},NULL,NULL,'f',NULL,0,NULL,{general_info[0][1]},'f',0,NULL,NULL,'{(qr)}',{fiscal_num},0,NULL,NULL,{general_info[0][2]});'''
     cursor.execute(creature_check)
     conn.commit()
+    conn.close()
 
 def new_check(id):
     new_cap_check(id)
