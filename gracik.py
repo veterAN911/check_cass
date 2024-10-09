@@ -49,8 +49,10 @@ def send_data():
                     num_check = f"{prefix_cass}_{str(missing_elements[i])}"
                     set_text_to_entry_logi(f"\nФормируем чек {num_check}")
                     check = zapros_OFD.select_ofd_check(num_check)
-                    parser_check.pars_check(check)
-                    messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
+                    receipt_details =parser_check.pars_check(check)
+                    cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
+                    cash_postgresql.new_cap_check(cash,id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'])
+                messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
             else:
                 set_text_to_entry_logi("\nОставляем смену")
     elif connOFD == "Азбука Вкус":

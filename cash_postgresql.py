@@ -39,13 +39,18 @@ def num_check_db(conn,id):
     conn.close()
     return result
 
-def new_cap_check(id):
-    qwery = '''INSERT INTO ch_purchase ("id","datecommit","datecreate","fiscaldocnum","senttoserverstatus","id_session","id_shift","checkstatus","checksumend","checksumstart","currentchecknum","discountvaluetotal",
-"id_loyaltransaction","operationtype","id_purchaseref","filename","kpk","spnd","set5checknumber","denyprinttodocuments","client_guid","clienttype","id_main_purchase","inn","vet_inspection","receipt_wide_discount",
-"on_day","guid_cashier_work_period","qr_code","fiscal_doc_id","cashoperation","reg_status","reg_data")
-(SELECT nextval('hibernate_sequence'),'2021-04-06','2021-04-06','1524;185',2,NULL,\'''' + id + '''\',    -- смена
-0,123123,123123,0,0,6076001,'t',NULL,NULL,1273666,34341,NULL,'f',NULL,0,NULL,5047085094,'f',0,NULL,NULL,NULL,NULL,0,NULL,NULL);
-'''
+def new_cap_check(conn,id,data,fiscal_num,summ_check,qr):
+    cursor = conn.cursor()
+    zapros_fool_check = f"SELECT numberfield,inn,kpp,id_session FROM ch_purchase WHERE id_shift = '{id}' AND fiscal_doc_id = '{fiscal_num - 1}'"
+    cursor.execute(zapros_fool_check)
+    general_info = cursor.fetchall()
+    creature_check = f'''INSERT INTO ch_purchase ("id","datecommit","datecreate","fiscaldocnum","numberfield","senttoserverstatus","id_session","id_shift","checkstatus","checksumend","checksumstart","currentchecknum","discountvaluetotal",
+                        "id_loyaltransaction","operationtype","id_purchaseref","filename","kpk","spnd","set5checknumber","denyprinttodocuments","client_guid","clienttype","id_main_purchase","inn","vet_inspection","receipt_wide_discount",
+                        "on_day","guid_cashier_work_period","qr_code","fiscal_doc_id","cashoperation","reg_status","reg_data","kpp")
+                        (SELECT nextval('hibernate_sequence'),'{data}','{data}','{fiscal_num};{general_info[0][0] + 1}',{general_info[0][0] + 1},2,{general_info[0][3]},'{id}',
+                        0,{summ_check},{summ_check},0,0,-1,'t',NULL,NULL,{fiscal_num},NULL,NULL,'f',NULL,0,NULL,{general_info[0][1]},'f',0,NULL,NULL,'{(qr)}',{fiscal_num},0,NULL,NULL,{general_info[0][2]});'''
+    cursor.execute(creature_check)
+    conn.commit()
 
 def new_check(id):
     new_cap_check(id)

@@ -1,17 +1,25 @@
 import json
 
-def pars_check():
-    with open('check.json', 'r', encoding='utf-8') as file:
-        data = json.load(file)  # Загружаем JSON данные из файла
-    print("\nДата чека ", data['ticket']['transactionDate'])
-    print("\nФискальный номер ", data['ticket']['fiscalDocumentNumber'])
-    print("\nNDS чека 10% ", data['ticket']['nds10'])
-    print("\nNDS чека 20% ", data['ticket']['nds20'])
-    for payment in data['ticket']['payments']:
-        if payment['sum'] != 0.0:
-            print(f"Сумма: {payment['sum']}, Тип оплаты: {payment['paymentType']}")
-    num_position = 0
-    for position in data['ticket']['items']:
-        num_position += 1
-        print(f"Позиция №{num_position}: {position['options']['name']}")
-pars_check()
+#with open('check.json', 'r', encoding='utf-8') as file:
+#        data = json.load(file)  # Загружаем JSON данные из файла
+
+def pars_check(data):
+    data_time = data['ticket']['transactionDate']
+    fiscal = data['ticket']['fiscalDocumentNumber']
+    sum_check = int(data['ticket']['totalSum'] * 100)
+    qr = data['ticket']['qrCode']
+
+    return {'data_time': data_time, 'fiscal': fiscal, 'sum_check': sum_check,"qr": qr}
+
+
+    #print("\nСумма чека ", int(data['ticket']['totalSum'] * 100))
+    #print("\nNDS чека 10% ", data['ticket']['nds10'])
+    #print("\nNDS чека 20% ", data['ticket']['nds20'])
+    #print("\nQR чека: ", data['ticket']['qrCode'])
+    #for payment in data['ticket']['payments']:
+    #    if payment['sum'] != 0.0:
+    #        print(f"Сумма: {payment['sum']}, Тип оплаты: {payment['paymentType']}")
+    #num_position = 0
+    #for position in data['ticket']['items']:
+    #    num_position += 1
+    #    print(f"Позиция №{num_position}: {position['options']['name']}")
