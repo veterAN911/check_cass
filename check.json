@@ -2,77 +2,105 @@
     "ticket": {
         "requestPayload": null,
         "responsePayload": null,
-        "acceptedAt": "2024-10-06T19:14:23.459+03:00",
-        "insertedAt": "2024-10-06T19:14:23.459+03:00",
-        "fs21": "gQaCs69Tcac=",
-        "header21": "pQMBEAlzgEQHACMocABX1rpJsgLdAFaVAAkFSA==",
+        "acceptedAt": "2024-10-10T12:00:21.228+03:00",
+        "insertedAt": "2024-10-10T12:00:21.228+03:00",
+        "fs21": "gQYk4Kdp+LY=",
+        "header21": "pQMBEAlzgEQHACMocABYvyxPXW+AAFi5AAkEww==",
         "protocolVersion": 288,
         "items": [
             {
                 "options": {
                     "quantity": "1.0",
-                    "name": "Ручка-стилус с фонариком,3AG3вкомпИМП",
-                    "sum": "7900",
-                    "price": "7900",
-                    "ndsRate": "1",
-                    "ndsSum": "1317",
-                    "calculationSubjectSign": "1",
+                    "name": "Молоко СлавКружеваГОСТ 3,2% 973млБЗМЖ",
+                    "sum": "6900",
+                    "price": "6900",
+                    "ndsRate": "2",
+                    "ndsSum": "627",
+                    "calculationSubjectSign": "33",
                     "calculationTypeSign": "4",
+                    "markingCodeProcessingMode": "0",
+                    "checkResultSubjectDetails": "15",
                     "quantityMeasure": "0"
                 },
+                "markingCodeProcessingMode": 0,
                 "quantityMeasure": 0,
-                "industryReceiptRequisite": [],
-                "ndsRate": 1,
-                "ndsSum": 1317,
+                "subjectCode": {
+                    "ktGS1M": "0104610030032405215qYo-J"
+                },
+                "industryReceiptRequisite": [
+                    {
+                        "foivId": "030",
+                        "documentDate": "21.11.2023",
+                        "value": "UUID=379c4ceb-4ce7-4e7a-8de8-c4577a7049ff&Time=1728550738495",
+                        "documentNumber": "1944"
+                    }
+                ],
+                "checkResultSubjectDetails": 15,
                 "quantity": 1.0,
-                "price": 7900,
-                "name": "Ручка-стилус с фонариком,3AG3вкомпИМП",
+                "price": 6900,
+                "ndsRate": 2,
+                "ndsSum": 627,
+                "name": "Молоко СлавКружеваГОСТ 3,2% 973млБЗМЖ",
                 "taxes": [
                     {
                         "layout": {
-                            "type": "НДС 20%",
-                            "printedName": "НДС 20%",
-                            "rate": 0.20
+                            "type": "НДС 10%",
+                            "printedName": "НДС 10%",
+                            "rate": 0.10
                         },
-                        "sum": 13.17
+                        "sum": 6.27
                     }
                 ],
-                "sum": 7900,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
+                "sum": 6900,
+                "calculationSubjectSign": 33,
+                "calculationTypeSign": 4
             },
             {
                 "options": {
                     "quantity": "1.0",
-                    "name": "Карамель Пчелка-Ball с нач. микс 180г",
-                    "sum": "4350",
-                    "price": "4350",
-                    "ndsRate": "1",
-                    "ndsSum": "725",
-                    "calculationSubjectSign": "1",
+                    "name": "Молоко СлавКружеваГОСТ 3,2% 973млБЗМЖ",
+                    "sum": "6900",
+                    "price": "6900",
+                    "ndsRate": "2",
+                    "ndsSum": "627",
+                    "calculationSubjectSign": "33",
                     "calculationTypeSign": "4",
+                    "markingCodeProcessingMode": "0",
+                    "checkResultSubjectDetails": "15",
                     "quantityMeasure": "0"
                 },
+                "markingCodeProcessingMode": 0,
                 "quantityMeasure": 0,
-                "industryReceiptRequisite": [],
-                "ndsRate": 1,
-                "ndsSum": 725,
+                "subjectCode": {
+                    "ktGS1M": "0104610030032405215aCI0B"
+                },
+                "industryReceiptRequisite": [
+                    {
+                        "foivId": "030",
+                        "documentDate": "21.11.2023",
+                        "value": "UUID=97bb8806-7f08-47d6-9ed3-a92493362daa&Time=1728550740771",
+                        "documentNumber": "1944"
+                    }
+                ],
+                "checkResultSubjectDetails": 15,
                 "quantity": 1.0,
-                "price": 4350,
-                "name": "Карамель Пчелка-Ball с нач. микс 180г",
+                "price": 6900,
+                "ndsRate": 2,
+                "ndsSum": 627,
+                "name": "Молоко СлавКружеваГОСТ 3,2% 973млБЗМЖ",
                 "taxes": [
                     {
                         "layout": {
-                            "type": "НДС 20%",
-                            "printedName": "НДС 20%",
-                            "rate": 0.20
+                            "type": "НДС 10%",
+                            "printedName": "НДС 10%",
+                            "rate": 0.10
                         },
-                        "sum": 7.25
+                        "sum": 6.27
                     }
                 ],
-                "sum": 4350,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
+                "sum": 6900,
+                "calculationSubjectSign": 33,
+                "calculationTypeSign": 4
             },
             {
                 "options": {
@@ -88,10 +116,10 @@
                 },
                 "quantityMeasure": 0,
                 "industryReceiptRequisite": [],
-                "ndsRate": 1,
-                "ndsSum": 100,
                 "quantity": 1.0,
                 "price": 600,
+                "ndsRate": 1,
+                "ndsSum": 100,
                 "name": "Пакет  \"Майка\" большая",
                 "taxes": [
                     {
@@ -104,68 +132,28 @@
                     }
                 ],
                 "sum": 600,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
+                "calculationSubjectSign": 1,
+                "calculationTypeSign": 4
             },
             {
                 "options": {
                     "quantity": "1.0",
-                    "name": "Набор обл. для днев. и тет 15шт Стамм",
-                    "sum": "5900",
-                    "price": "5900",
-                    "ndsRate": "2",
-                    "ndsSum": "536",
+                    "name": "Шапка женская ИМП",
+                    "sum": "24900",
+                    "price": "24900",
+                    "ndsRate": "1",
+                    "ndsSum": "4150",
                     "calculationSubjectSign": "1",
                     "calculationTypeSign": "4",
                     "quantityMeasure": "0"
                 },
                 "quantityMeasure": 0,
                 "industryReceiptRequisite": [],
-                "ndsRate": 2,
-                "ndsSum": 536,
                 "quantity": 1.0,
-                "price": 5900,
-                "name": "Набор обл. для днев. и тет 15шт Стамм",
-                "taxes": [
-                    {
-                        "layout": {
-                            "type": "НДС 10%",
-                            "printedName": "НДС 10%",
-                            "rate": 0.10
-                        },
-                        "sum": 5.36
-                    }
-                ],
-                "sum": 5900,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
-            },
-            {
-                "options": {
-                    "quantity": "1.0",
-                    "name": "Полотенце махр50*90Нордтекс",
-                    "sum": "34900",
-                    "price": "34900",
-                    "ndsRate": "1",
-                    "ndsSum": "5817",
-                    "calculationSubjectSign": "33",
-                    "calculationTypeSign": "4",
-                    "markingCodeProcessingMode": "0",
-                    "checkResultSubjectDetails": "15",
-                    "quantityMeasure": "0"
-                },
-                "markingCodeProcessingMode": 0,
-                "quantityMeasure": 0,
-                "subjectCode": {
-                    "ktGS1M": "0104650310550953215639045612755"
-                },
-                "checkResultSubjectDetails": 15,
-                "industryReceiptRequisite": [],
+                "price": 24900,
                 "ndsRate": 1,
-                "ndsSum": 5817,
-                "quantity": 1.0,
-                "price": 34900,
-                "name": "Полотенце махр50*90Нордтекс",
+                "ndsSum": 4150,
+                "name": "Шапка женская ИМП",
                 "taxes": [
                     {
                         "layout": {
@@ -173,39 +161,98 @@
                             "printedName": "НДС 20%",
                             "rate": 0.20
                         },
-                        "sum": 58.17
+                        "sum": 41.50
                     }
                 ],
-                "sum": 34900,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 33
+                "sum": 24900,
+                "calculationSubjectSign": 1,
+                "calculationTypeSign": 4
             },
             {
                 "options": {
                     "quantity": "1.0",
-                    "name": "Полотенце 35*60Эталон",
+                    "name": "Носки женские ИМП",
+                    "sum": "13400",
+                    "price": "13400",
+                    "ndsRate": "1",
+                    "ndsSum": "2233",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "quantity": 1.0,
+                "price": 13400,
+                "ndsRate": 1,
+                "ndsSum": 2233,
+                "name": "Носки женские ИМП",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 22.33
+                    }
+                ],
+                "sum": 13400,
+                "calculationSubjectSign": 1,
+                "calculationTypeSign": 4
+            },
+            {
+                "options": {
+                    "quantity": "3.0",
+                    "name": "Носки мужские ТТ",
+                    "sum": "29700",
+                    "price": "9900",
+                    "ndsRate": "1",
+                    "ndsSum": "4950",
+                    "calculationSubjectSign": "1",
+                    "calculationTypeSign": "4",
+                    "quantityMeasure": "0"
+                },
+                "quantityMeasure": 0,
+                "industryReceiptRequisite": [],
+                "quantity": 3.0,
+                "price": 9900,
+                "ndsRate": 1,
+                "ndsSum": 4950,
+                "name": "Носки мужские ТТ",
+                "taxes": [
+                    {
+                        "layout": {
+                            "type": "НДС 20%",
+                            "printedName": "НДС 20%",
+                            "rate": 0.20
+                        },
+                        "sum": 49.50
+                    }
+                ],
+                "sum": 29700,
+                "calculationSubjectSign": 1,
+                "calculationTypeSign": 4
+            },
+            {
+                "options": {
+                    "quantity": "1.0",
+                    "name": "Органайзер, 27*21*8 см_ИМП",
                     "sum": "9900",
                     "price": "9900",
                     "ndsRate": "1",
                     "ndsSum": "1650",
-                    "calculationSubjectSign": "33",
+                    "calculationSubjectSign": "1",
                     "calculationTypeSign": "4",
-                    "markingCodeProcessingMode": "0",
-                    "checkResultSubjectDetails": "0",
                     "quantityMeasure": "0"
                 },
-                "markingCodeProcessingMode": 0,
                 "quantityMeasure": 0,
-                "subjectCode": {
-                    "ktGS1M": "0104620214151358215H83Ci\"VDA7cr"
-                },
-                "checkResultSubjectDetails": 0,
                 "industryReceiptRequisite": [],
-                "ndsRate": 1,
-                "ndsSum": 1650,
                 "quantity": 1.0,
                 "price": 9900,
-                "name": "Полотенце 35*60Эталон",
+                "ndsRate": 1,
+                "ndsSum": 1650,
+                "name": "Органайзер, 27*21*8 см_ИМП",
                 "taxes": [
                     {
                         "layout": {
@@ -217,28 +264,28 @@
                     }
                 ],
                 "sum": 9900,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 33
+                "calculationSubjectSign": 1,
+                "calculationTypeSign": 4
             },
             {
                 "options": {
-                    "quantity": "1.0",
-                    "name": "Пенал с тремя отделениями",
-                    "sum": "29900",
-                    "price": "29900",
+                    "quantity": "2.0",
+                    "name": "Пряники Кольцо 900г Асс",
+                    "sum": "29800",
+                    "price": "14900",
                     "ndsRate": "1",
-                    "ndsSum": "4983",
+                    "ndsSum": "4967",
                     "calculationSubjectSign": "1",
                     "calculationTypeSign": "4",
                     "quantityMeasure": "0"
                 },
                 "quantityMeasure": 0,
                 "industryReceiptRequisite": [],
+                "quantity": 2.0,
+                "price": 14900,
                 "ndsRate": 1,
-                "ndsSum": 4983,
-                "quantity": 1.0,
-                "price": 29900,
-                "name": "Пенал с тремя отделениями",
+                "ndsSum": 4967,
+                "name": "Пряники Кольцо 900г Асс",
                 "taxes": [
                     {
                         "layout": {
@@ -246,151 +293,19 @@
                             "printedName": "НДС 20%",
                             "rate": 0.20
                         },
-                        "sum": 49.83
+                        "sum": 49.67
                     }
                 ],
-                "sum": 29900,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
-            },
-            {
-                "options": {
-                    "quantity": "1.0",
-                    "name": "Арахис в хруст.корочкеХрустNUT 80гр ассо",
-                    "sum": "2750",
-                    "price": "2750",
-                    "ndsRate": "1",
-                    "ndsSum": "458",
-                    "calculationSubjectSign": "1",
-                    "calculationTypeSign": "4",
-                    "quantityMeasure": "0"
-                },
-                "quantityMeasure": 0,
-                "industryReceiptRequisite": [],
-                "ndsRate": 1,
-                "ndsSum": 458,
-                "quantity": 1.0,
-                "price": 2750,
-                "name": "Арахис в хруст.корочкеХрустNUT 80гр ассо",
-                "taxes": [
-                    {
-                        "layout": {
-                            "type": "НДС 20%",
-                            "printedName": "НДС 20%",
-                            "rate": 0.20
-                        },
-                        "sum": 4.58
-                    }
-                ],
-                "sum": 2750,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
-            },
-            {
-                "options": {
-                    "quantity": "1.0",
-                    "name": "Ножницы для детского творчества,1шт. ИМП",
-                    "sum": "7900",
-                    "price": "7900",
-                    "ndsRate": "1",
-                    "ndsSum": "1317",
-                    "calculationSubjectSign": "1",
-                    "calculationTypeSign": "4",
-                    "quantityMeasure": "0"
-                },
-                "quantityMeasure": 0,
-                "industryReceiptRequisite": [],
-                "ndsRate": 1,
-                "ndsSum": 1317,
-                "quantity": 1.0,
-                "price": 7900,
-                "name": "Ножницы для детского творчества,1шт. ИМП",
-                "taxes": [
-                    {
-                        "layout": {
-                            "type": "НДС 20%",
-                            "printedName": "НДС 20%",
-                            "rate": 0.20
-                        },
-                        "sum": 13.17
-                    }
-                ],
-                "sum": 7900,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
-            },
-            {
-                "options": {
-                    "quantity": "1.0",
-                    "name": "Степлер со скобами Berlingo РЕЛЬЕФ",
-                    "sum": "19900",
-                    "price": "19900",
-                    "ndsRate": "1",
-                    "ndsSum": "3317",
-                    "calculationSubjectSign": "1",
-                    "calculationTypeSign": "4",
-                    "quantityMeasure": "0"
-                },
-                "quantityMeasure": 0,
-                "industryReceiptRequisite": [],
-                "ndsRate": 1,
-                "ndsSum": 3317,
-                "quantity": 1.0,
-                "price": 19900,
-                "name": "Степлер со скобами Berlingo РЕЛЬЕФ",
-                "taxes": [
-                    {
-                        "layout": {
-                            "type": "НДС 20%",
-                            "printedName": "НДС 20%",
-                            "rate": 0.20
-                        },
-                        "sum": 33.17
-                    }
-                ],
-                "sum": 19900,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
-            },
-            {
-                "options": {
-                    "quantity": "1.0",
-                    "name": "Отбеливающая з/паста Sadoer 100г",
-                    "sum": "9900",
-                    "price": "9900",
-                    "ndsRate": "1",
-                    "ndsSum": "1650",
-                    "calculationSubjectSign": "1",
-                    "calculationTypeSign": "4",
-                    "quantityMeasure": "0"
-                },
-                "quantityMeasure": 0,
-                "industryReceiptRequisite": [],
-                "ndsRate": 1,
-                "ndsSum": 1650,
-                "quantity": 1.0,
-                "price": 9900,
-                "name": "Отбеливающая з/паста Sadoer 100г",
-                "taxes": [
-                    {
-                        "layout": {
-                            "type": "НДС 20%",
-                            "printedName": "НДС 20%",
-                            "rate": 0.20
-                        },
-                        "sum": 16.50
-                    }
-                ],
-                "sum": 9900,
-                "calculationTypeSign": 4,
-                "calculationSubjectSign": 1
+                "sum": 29800,
+                "calculationSubjectSign": 1,
+                "calculationTypeSign": 4
             }
         ],
         "operatorPhoneToTransfer": [],
         "paymentAgentPhone": [],
         "operatorPhoneToReceive": [],
         "providerPhone": [],
-        "checkResults": 1,
+        "checkResults": 0,
         "industryReceiptRequisite": [],
         "user": "ООО \"Бэст Прайс\"",
         "operationType": 2,
@@ -398,59 +313,55 @@
         "retailPlace": "Магазин #5934",
         "retailPlaceAddress": "181110, Псковская обл., рп. Струги Красные, ул. Советская  д. 13",
         "fnsUrl": "www.nalog.gov.ru",
-        "userInn": "5047085094",
-        "requestNumber": 63,
+        "requestNumber": 3,
         "agent": {
             "operatorPhoneToTransfer": [],
             "paymentAgentPhone": [],
             "operatorPhoneToReceive": []
         },
-        "qrCode": "t=20241006T1914&s=1339.00&fn=7380440700232870&i=22486&fp=1822180492&n=1",
-        "type": "TICKET",
-        "kktRegId": "0005020639032566    ",
-        "fiscalDriveNumber": "7380440700232870",
-        "shiftNumber": 180,
+        "qrCode": "t=20241010T1200&s=1221.00&fn=7380440700232870&i=22719&fp=1866415392&n=1",
+        "userInn": "5047085094",
         "options": {
             "retailPlaceAddress": "181110, Псковская обл., рп. Струги Красные, ул. Советская  д. 13",
-            "dateTime": "1728242040",
+            "dateTime": "1728561600",
             "userInn": "5047085094",
-            "totalSum": "133900",
-            "operator": "кассир Никульникова",
+            "totalSum": "122100",
+            "operator": "Администратор Сорокина",
             "cashTotalSum": "0",
             "kktRegId": "0005020639032566",
-            "shiftNumber": "180",
-            "fiscalDocumentNumber": "22486",
+            "shiftNumber": "184",
+            "fiscalDocumentNumber": "22719",
             "fiscalDriveNumber": "7380440700232870",
-            "requestNumber": "63",
+            "requestNumber": "3",
             "user": "ООО \"Бэст Прайс\"",
             "operationType": "1",
             "taxationType": "1",
             "fnsUrl": "www.nalog.gov.ru",
-            "fiscalSign": "31 04 6c 9c 44 8c",
-            "ecashTotalSum": "133900",
-            "nds18": "21334",
-            "nds10": "536",
+            "fiscalSign": "31 04 6f 3f 3d 20",
+            "ecashTotalSum": "122100",
+            "nds18": "18050",
+            "nds10": "1254",
             "retailPlace": "Магазин #5934",
             "protocolVersion": "4",
             "prepaymentSum": "0",
             "postpaymentSum": "0",
             "counterSubmissionSum": "0",
-            "checkResults": "1",
+            "checkResults": "0",
             "extras": {
                 "fnsStatus": {
                     "status": "200",
-                    "confirmation": "{\"fdId\":\"5506806819816060929\"}",
-                    "confirmationDate": "2024-10-06T19:14:24.482",
+                    "confirmation": "{\"fdId\":\"5512168105841411328\"}",
+                    "confirmationDate": "2024-10-10T12:00:22.171",
                     "receiver": "0"
                 },
                 "aggregation": {
-                    "sum": "1339",
+                    "sum": "1221",
                     "cashSum": "0",
-                    "ecashSum": "1339",
+                    "ecashSum": "1221",
                     "prepaymentSum": "0",
                     "postpaymentSum": "0",
                     "countersubmissionSum": "0",
-                    "totalClearing": "1339"
+                    "totalClearing": "1221"
                 }
             },
             "senderAddress": "echeck@1-ofd.ru",
@@ -458,23 +369,28 @@
             "kktNumber": "0128073696",
             "orgId": "3028"
         },
-        "transactionId": "0005020639032566_7380440700232870_22486",
-        "transactionDate": "2024-10-06T19:14:00",
+        "type": "TICKET",
+        "kktRegId": "0005020639032566    ",
+        "fiscalDriveNumber": "7380440700232870",
+        "shiftNumber": 184,
+        "transactionId": "0005020639032566_7380440700232870_22719",
+        "transactionDate": "2024-10-10T12:00:00",
         "kkmId": "0005020639032566",
-        "fiscalId": "1822180492",
-        "fiscalDocumentNumber": 22486,
+        "fiscalId": "1866415392",
+        "fiscalDocumentNumber": 22719,
         "header21Bytes": null,
         "fs21Bytes": null,
         "field1209": 4,
         "eligibleForNds20": true,
-        "totalSum": 1339.00,
+        "cashTotalSum": 0.00,
+        "totalSum": 1221.00,
         "payments": [
             {
                 "sum": 0.00,
                 "paymentType": "CASH"
             },
             {
-                "sum": 1339.00,
+                "sum": 1221.00,
                 "paymentType": "CARD"
             },
             {
@@ -490,11 +406,11 @@
                 "paymentType": "COUNTERSUBMISSION"
             }
         ],
-        "ecashTotalSum": 1339.00,
+        "ecashTotalSum": 1221.00,
         "postpaymentSum": 0.00,
         "prepaymentSum": 0.00,
         "counterSubmissionSum": 0.00,
-        "cashTotalSum": 0.00,
+        "totalTax": 193.04,
         "taxes": [
             {
                 "layout": {
@@ -502,7 +418,7 @@
                     "printedName": "СУММА НДС 20%",
                     "rate": 0.20
                 },
-                "sum": 213.34
+                "sum": 180.50
             },
             {
                 "layout": {
@@ -510,13 +426,12 @@
                     "printedName": "СУММА НДС 10%",
                     "rate": 0.10
                 },
-                "sum": 5.36
+                "sum": 12.54
             }
         ],
-        "nds20": 213.34,
-        "nds10": 5.36,
-        "totalTax": 218.70,
-        "operator": "кассир Никульникова"
+        "nds20": 180.50,
+        "nds10": 12.54,
+        "operator": "Администратор Сорокина"
     },
     "ticketDescription": "transaction.ticket.sell, transaction.ticket.payment.type.card",
     "orgTitle": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"БЭСТ ПРАЙС\"",
