@@ -17,7 +17,16 @@ def pars_pos(data):
     for position in data['ticket']['items']:
         position_name = position['options']['name']
         nds = int(position['taxes'][0]['layout']['rate'] * 100)
-        positions.append({'position_name': position_name, 'nds': nds})
+        price_1_pos = position['options']['price']
+        price_sum = position['options']['sum']
+        lot = int(position['quantity'] * 1000)
+        code = "null"
+        subject_code = position.get('subjectCode')
+        if subject_code and 'ktGS1M' in subject_code:
+            code = subject_code['ktGS1M']
+        positions.append({'position_name': position_name, 'nds': nds, 'col': lot, 'price': price_1_pos, 'summ': price_sum, 'subjectCode': code})
+             
+        #positions.append({'position_name': position_name, 'nds': nds, 'price': price_1_pos, 'summ': price_sum})
     
     return positions
       
