@@ -15,6 +15,7 @@ def send_data():
     connOFD = combo.get()
     id = entry1_1.get().strip()
     cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
+    catalog = cash_postgresql.con_catalog(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
     result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(cash, id)
 
     with open('OFD', "r") as file:
@@ -31,7 +32,6 @@ def send_data():
             list1.append(last_value)
 
         set_text_to_entry_logi("\nПолучены данные из базы данных")
-        cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
         check_bd = cash_postgresql.num_check_db(cash, id)
         list2 = [int(item[0]) for item in check_bd]
         list1 = [int(i) for i in list1]
@@ -49,9 +49,10 @@ def send_data():
                     num_check = f"{prefix_cass}_{str(missing_elements[i])}"
                     set_text_to_entry_logi(f"\nФормируем чек {num_check}")
                     check = zapros_OFD.select_ofd_check(num_check)
-                    receipt_details =parser_check.pars_check(check)
-                    cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
-                    cash_postgresql.new_cap_check(cash,id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'])
+                    receipt_details = parser_check.pars_check(check)
+                    receipt_pos_details = parser_check.pars_pos(check)
+                    #print(id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_pos_details)
+                    cash_postgresql.new_cap_check(cash,catalog,id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_pos_details)
                 messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
             else:
                 set_text_to_entry_logi("\nОставляем смену")
