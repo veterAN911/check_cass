@@ -37,7 +37,7 @@ def num_check_db(conn,id):
     result = cursor.fetchall()
     return result
 
-def new_cap_check(conn,conn_catalog,id,data,fiscal_num,summ_check,qr,data_position):
+def new_cap_check(conn,conn_catalog,id,data,fiscal_num,summ_check,qr,paymont,data_position):
     cursor = conn.cursor()
     zapros_fool_check = f"SELECT numberfield,inn,kpp,id_session FROM ch_purchase WHERE id_shift = '{id}' AND fiscal_doc_id = '{fiscal_num - 1}'"
     cursor.execute(zapros_fool_check)
@@ -84,8 +84,37 @@ def new_cap_check(conn,conn_catalog,id,data,fiscal_num,summ_check,qr,data_positi
         print(creature_position)
         cursor.execute(creature_position)
         conn.commit()
-        if 
-        creature_paymont = 
+        if paymont == 'CARD':
+            creature_paymont = f'''INSERT INTO "public"."ch_payment" ("id", "id_basecurrency", "id_currency", "datecommit", "datecreate", "numberfield", "paymenttype", "sumpay", "sumpaybasecurrency", "id_purchase", "successprocessed") 
+            VALUES (SELECT nextval('hibernate_sequence'), 'RUB', 'RUB', '{data}', '{data}', 1, 'BankCardPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
+            cursor.execute(creature_paymont)
+            cursor.execute("SELECT lastval()")
+            id_paymont = cursor.fetchone()[0]
+            conn.commit()
+
+            creature_payment_transaction = f'''INSERT INTO "public"."ch_payment_transaction" ("id", "cash_num", "discriminator", "create_time", "sumpay", "senttoserverstatus", "filename", "id_purchase", "id_payment", "num_shift", "cash_guid", "shop_index", "annulling")
+            VALUES (SELECT nextval('hibernate_sequence'), 4, 'BankCardPaymentEntity', '2024-10-12 23:10:12.094', 29100, 2, NULL, {id_purchase}, {id_paymont}, 190, 1728763812094, 362, 'f')'''
+            cursor.execute(creature_payment_transaction)
+            cursor.execute("SELECT lastval()")
+            id_payment_transaction = cursor.fetchone()[0]
+            conn.commit()
+
+            creature_bankcardpayment = f'''INSERT INTO "public"."ch_bankcardpayment" ("authcode", "cardnumber", "cardhash", "cardtype", "cashtransid", "cashtransdate", "hosttransid", "merchantid", "message", "operationcode", "refnumber", "responsecode", "resultcode", "status", "terminalid", "bankid", "banktype") 
+            VALUES ('{id_paymont}', '416000', '243892', '************6964', '47FF8E2E5D9D7C651693628984CEDC4990787855', 'Visa', 170010, '2023-09-28 14:41:22.379', NULL, NULL, 'ОДОБРЕНО:', '1', 327150134963, '0', NULL, 't', 29118026) RETURNING *'''
+            cursor.execute(creature_bankcardpayment)
+            conn.commit()
+
+            creature_bankcardpayment_transaction =  f'''INSERT INTO "public"."ch_bankcardpayment_transaction" ("id", "authcode", "cardnumber", "cardhash", "cardtype", "cashtransid", "cashtransdate", "hosttransid", "merchantid", "message", "operationcode", "refnumber", "responsecode", "currency", "resultcode", "status", "terminalid", "bankid", "banktype") 
+            VALUES ({id_payment_transaction}, '243892', '************6964', '47FF8E2E5D9D7C651693628984CEDC4990787855', 'Visa', 170010, '2023-09-28 14:41:22.379', NULL, NULL, 'ОДОБРЕНО:', 1, '327150134963', '0', 'RUB', NULL, 't', '29118026', 'Сбербанк', 1) RETURNING *'''
+            cursor.execute(creature_bankcardpayment_transaction)
+            conn.commit()
+        else:
+            creature_paymont = f'''INSERT INTO "public"."ch_payment" ("id", "id_basecurrency", "id_currency", "datecommit", "datecreate", "numberfield", "paymenttype", "sumpay", "sumpaybasecurrency", "id_purchase", "successprocessed") 
+            VALUES (SELECT nextval('hibernate_sequence'), 'RUB', 'RUB', '{data}', '{data}', 1, 'CashPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
+            cursor.execute(creature_paymont)
+            cursor.execute("SELECT lastval()")
+            id_paymont = cursor.fetchone()[0]
+            conn.commit()
 
     conn.close()
 

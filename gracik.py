@@ -52,7 +52,7 @@ def send_data():
                     receipt_details = parser_check.pars_check(check)
                     receipt_pos_details = parser_check.pars_pos(check)
                     #print(id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_pos_details)
-                    cash_postgresql.new_cap_check(cash,catalog,id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_pos_details)
+                    cash_postgresql.new_cap_check(cash,catalog,id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_details['paymont'],receipt_pos_details)
                 messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
             else:
                 set_text_to_entry_logi("\nОставляем смену")
