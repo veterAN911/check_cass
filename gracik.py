@@ -11,53 +11,85 @@ def extract_last_value(string):
     last_value = parts[-1]
     return last_value
 
+def compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal):
+    set_text_to_entry_logi("\nПолучены данные из ОФД")
+    last_values = zapros_OFD.search_shift_all(login,password, result_num_fiscal[0],result_num_fiscal[1])
+    list1 = []
+    for i in range(last_values['pagination']['totalItems']):
+        last_value = extract_last_value(last_values['transactions'][i]['id'])
+        list1.append(last_value)
+
+    set_text_to_entry_logi("\nПолучены данные из базы данных")
+    check_bd = cash_postgresql.num_check_db(cash, id)
+    list2 = [int(item[0]) for item in check_bd]
+    list1 = [int(i) for i in list1]
+    set1 = set(list1)
+    set2 = set(list2)
+    set_text_to_entry_logi("\nСверяются данные из ОФД и БД кассы")
+    missing_elements = list(set1 - set2)
+    if(missing_elements == []):
+        messagebox.showinfo("Результат", "Смены сверены с ОФД расхождений нету")
+    else:
+        answer = messagebox.askquestion("Результат", f"Смены сверены расхождения с ОФД в {len(missing_elements)} чека \n Исправить смену ?")
+        if answer == "yes":
+            prefix_cass = last_values['transactions'][0]['id'].rsplit('_', 1)[0]
+            for i in range(len(missing_elements)):
+                num_check = f"{prefix_cass}_{str(missing_elements[i])}"
+                set_text_to_entry_logi(f"\nФормируем чек {num_check}")
+                check = zapros_OFD.select_ofd_check(num_check)
+                receipt_details = parser_check.pars_check(check)
+                receipt_pos_details = parser_check.pars_pos(check)
+                #print(id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_pos_details)
+                cash_postgresql.new_cap_check(cash,catalog,id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_details['paymont'],receipt_pos_details)
+            messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
+        else:
+            set_text_to_entry_logi("\nОставляем смену")
+
+def check_and_create_OFD_file():
+    try:
+        with open('OFD', "r") as file:
+            data = json.load(file)
+        
+        if 'fix' not in data or 'azbuka' not in data:
+            messagebox.showerror("Error OFD.json", "Неверная структура в файле OFD\nДля исправления просто удалите его и он сформируется по новой")
+
+        if not data['fix']['login'] or not data['fix']['password']:
+            messagebox.showerror("Error OFD.json", "В файле OFD.json у fix не заполнены login и password")
+
+        if not data['azbuka']['login'] or not data['azbuka']['password']:
+            messagebox.showerror("Error OFD.json", "В файле OFD.json у azbuka не заполнены login и password")
+    except FileNotFoundError:
+        data = {}
+        data['fix'] = {'login': '', 'password': ''}
+        data['azbuka'] = {'login': '', 'password': ''}
+        with open('OFD', "w") as file:
+            json.dump(data, file, indent=2)
+        messagebox.showinfo("Внимание", "Не закрывая форму заполните сейчас в создавшемся файле OFD.json поля у всех login и password и только после этого нажимай ОК!\nИначе дальнейшая работа приведёт к ошибкам!")
+
+    return data
+
 def send_data():
     connOFD = combo.get()
     id = entry1_1.get().strip()
-    cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
-    catalog = cash_postgresql.con_catalog(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
-    result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(cash, id)
+    try:
+        ofd_data = check_and_create_OFD_file()
+        try:
+            cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
+            catalog = cash_postgresql.con_catalog(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
+            result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(cash, id)
 
-    with open('OFD', "r") as file:
-        data = json.load(file)
-    if connOFD == "Fix Price":
-
-        list1 = []
-        login = data['fix']['login']
-        password = data['fix']['password']
-        set_text_to_entry_logi("\nПолучены данные из ОФД")
-        last_values = zapros_OFD.search_shift_all(login,password, result_num_fiscal[0],result_num_fiscal[1])
-        for i in range(last_values['pagination']['totalItems']):
-            last_value = extract_last_value(last_values['transactions'][i]['id'])
-            list1.append(last_value)
-
-        set_text_to_entry_logi("\nПолучены данные из базы данных")
-        check_bd = cash_postgresql.num_check_db(cash, id)
-        list2 = [int(item[0]) for item in check_bd]
-        list1 = [int(i) for i in list1]
-        set1 = set(list1)
-        set2 = set(list2)
-        set_text_to_entry_logi("\nСверяются данные из ОФД и БД кассы")
-        missing_elements = list(set1 - set2)
-        if(missing_elements == []):
-            messagebox.showinfo("Результат", "Смены сверены с ОФД расхождений нету")
-        else:
-            answer = messagebox.askquestion("Результат", f"Смены сверены расхождения с ОФД в {len(missing_elements)} чека \n Исправить смену ?")
-            if answer == "yes":
-                prefix_cass = last_values['transactions'][0]['id'].rsplit('_', 1)[0]
-                for i in range(len(missing_elements)):
-                    num_check = f"{prefix_cass}_{str(missing_elements[i])}"
-                    set_text_to_entry_logi(f"\nФормируем чек {num_check}")
-                    check = zapros_OFD.select_ofd_check(num_check)
-                    receipt_details = parser_check.pars_check(check)
-                    receipt_pos_details = parser_check.pars_pos(check)
-                    #print(id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_pos_details)
-                    cash_postgresql.new_cap_check(cash,catalog,id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_details['paymont'],receipt_pos_details)
-                messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
-            else:
-                set_text_to_entry_logi("\nОставляем смену")
-    elif connOFD == "Азбука Вкус":
-        messagebox.showinfo("Данные по OFD", f"Логин: {data['azbuka']['login']}\nПароль: {data['azbuka']['password']}")
+            if connOFD == "Fix Price":
+                login = ofd_data['fix']['login']
+                password = ofd_data['fix']['password']
+                compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal)
+            elif connOFD == "Азбука Вкус":
+                login = ofd_data['azbuka']['login']
+                password = ofd_data['azbuka']['password']
+                compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal)
+        except:
+            messagebox.showerror("Error","Нет подключеня к базе кассы!")
+    except ValueError as e:
+        set_text_to_entry_logi("\n Не обрабатываются данные для ОФД")
 
 def set_text_to_entry_logi(text):
     entry0_1_1.insert(tk.END, text)

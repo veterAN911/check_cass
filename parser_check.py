@@ -1,9 +1,9 @@
 
 import json
 
-with open('check.json', 'r', encoding='utf-8') as file:
+#with open('check.json', 'r', encoding='utf-8') as file:
 
-        data = json.load(file)  # Загружаем JSON данные из файла
+#        data = json.load(file)  # Загружаем JSON данные из файла
 
 def pars_check(data):
     data_time = data['ticket']['transactionDate']
@@ -37,6 +37,3 @@ def pars_pos(data):
         positions.append({'position_name': position_name, 'num_pos': num_pos, 'nds': nds, 'ndssumm': ndssumm, 'col': lot, 'price': price_1_pos, 'summ': price_sum, 'subjectCode': code})
     
     return positions
-
-
-print(pars_check(data))
