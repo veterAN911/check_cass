@@ -11,7 +11,7 @@ def extract_last_value(string):
     last_value = parts[-1]
     return last_value
 
-def compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal):
+def compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id):
     set_text_to_entry_logi("\nПолучены данные из ОФД")
     last_values = zapros_OFD.search_shift_all(login,password, result_num_fiscal[0],result_num_fiscal[1])
     list1 = []
@@ -39,7 +39,7 @@ def compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal):
                 check = zapros_OFD.select_ofd_check(num_check)
                 receipt_details = parser_check.pars_check(check)
                 receipt_pos_details = parser_check.pars_pos(check)
-                #print(id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_pos_details)
+
                 cash_postgresql.new_cap_check(cash,catalog,id,receipt_details['data_time'],receipt_details['fiscal'],receipt_details['sum_check'],receipt_details['qr'],receipt_details['paymont'],receipt_pos_details)
             messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
         else:
@@ -71,25 +71,26 @@ def check_and_create_OFD_file():
 def send_data():
     connOFD = combo.get()
     id = entry1_1.get().strip()
-    try:
-        ofd_data = check_and_create_OFD_file()
-        try:
-            cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
-            catalog = cash_postgresql.con_catalog(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
-            result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(cash, id)
+    #try:
+    ofd_data = check_and_create_OFD_file()
+        #try:
+    cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
+    catalog = cash_postgresql.con_catalog(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
+    result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(cash, id)
+    
 
-            if connOFD == "Fix Price":
-                login = ofd_data['fix']['login']
-                password = ofd_data['fix']['password']
-                compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal)
-            elif connOFD == "Азбука Вкус":
-                login = ofd_data['azbuka']['login']
-                password = ofd_data['azbuka']['password']
-                compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal)
-        except:
-            messagebox.showerror("Error","Нет подключеня к базе кассы!")
-    except ValueError as e:
-        set_text_to_entry_logi("\n Не обрабатываются данные для ОФД")
+    if connOFD == "Fix Price":
+        login = ofd_data['fix']['login']
+        password = ofd_data['fix']['password']
+        compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
+    elif connOFD == "Азбука Вкус":
+        login = ofd_data['azbuka']['login']
+        password = ofd_data['azbuka']['password']
+        compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
+        #except:
+            #messagebox.showerror("Error","Нет подключеня к базе кассы!")
+    #except ValueError as e:
+        #set_text_to_entry_logi("\n Не обрабатываются данные для ОФД")
 
 def set_text_to_entry_logi(text):
     entry0_1_1.insert(tk.END, text)
@@ -112,7 +113,7 @@ label0_1 = tk.Label(frame, text="id смены")
 label0_1.grid(row=0, column=2)
 
 entry1_1 = tk.Entry(frame)
-entry1_1.insert(0, "15577571")
+entry1_1.insert(0, "12962541")
 entry1_1.grid(row=0, column=3)
 
 label1 = tk.Label(frame, text="Логин")

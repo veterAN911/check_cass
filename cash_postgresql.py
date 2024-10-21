@@ -66,6 +66,7 @@ def new_cap_check(conn,conn_catalog,id,data,fiscal_num,summ_check,qr,paymont,dat
         price_sum = pos['summ']
         qentity = pos['col']
         excise_code = pos['subjectCode']
+        excise_code = excise_code.replace("'", "''").replace('"', '""')
 
         barcode = response_s_pos[0]
         item = response_s_pos[1]
@@ -82,46 +83,48 @@ def new_cap_check(conn,conn_catalog,id,data,fiscal_num,summ_check,qr,paymont,dat
         (SELECT nextval('hibernate_sequence'),'{barcode}','t','{data}',1,0,'{item}','{ST}','{name}','{NDS}','NDS','{sum_nds}',{num_position},'{price_1_pos}','{price_1_pos}','ProductPieceEntity',{qentity},1,
         '{price_sum}','0','1',{id_purchase},'{cat_mask}','t','NONE','f','t','f','f','{excise_code}','{excise_code}','0',{mark_type},'4');'''
         print(creature_position)
+        
         cursor.execute(creature_position)
         conn.commit()
         if paymont == 'CARD':
+            query = f"SELECT cashnum,numshift,shopindex FROM public.ch_shift WHERE id = '{id}'"
+            cursor.execute(query)
+            cash_num_shop = cursor.fetchall()[0]
+
             creature_paymont = f'''INSERT INTO "public"."ch_payment" ("id", "id_basecurrency", "id_currency", "datecommit", "datecreate", "numberfield", "paymenttype", "sumpay", "sumpaybasecurrency", "id_purchase", "successprocessed") 
-            VALUES (SELECT nextval('hibernate_sequence'), 'RUB', 'RUB', '{data}', '{data}', 1, 'BankCardPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
+            VALUES ((SELECT nextval('hibernate_sequence')), 'RUB', 'RUB', '{data}', '{data}', 1, 'BankCardPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
             cursor.execute(creature_paymont)
             cursor.execute("SELECT lastval()")
             id_paymont = cursor.fetchone()[0]
             conn.commit()
 
             creature_payment_transaction = f'''INSERT INTO "public"."ch_payment_transaction" ("id", "cash_num", "discriminator", "create_time", "sumpay", "senttoserverstatus", "filename", "id_purchase", "id_payment", "num_shift", "cash_guid", "shop_index", "annulling")
-            VALUES (SELECT nextval('hibernate_sequence'), 4, 'BankCardPaymentEntity', '2024-10-12 23:10:12.094', 29100, 2, NULL, {id_purchase}, {id_paymont}, 190, 1728763812094, 362, 'f')'''
+            VALUES ((SELECT nextval('hibernate_sequence')), {cash_num_shop[0]}, 'BankCardPaymentEntity', '{data}', 29100, 2, NULL, {id_purchase}, {id_paymont}, {cash_num_shop[1]}, 1728763812094, {cash_num_shop[2]}, 'f')'''
             cursor.execute(creature_payment_transaction)
             cursor.execute("SELECT lastval()")
             id_payment_transaction = cursor.fetchone()[0]
             conn.commit()
 
-            creature_bankcardpayment = f'''INSERT INTO "public"."ch_bankcardpayment" ("authcode", "cardnumber", "cardhash", "cardtype", "cashtransid", "cashtransdate", "hosttransid", "merchantid", "message", "operationcode", "refnumber", "responsecode", "resultcode", "status", "terminalid", "bankid", "banktype") 
-            VALUES ('{id_paymont}', '416000', '243892', '************6964', '47FF8E2E5D9D7C651693628984CEDC4990787855', 'Visa', 170010, '2023-09-28 14:41:22.379', NULL, NULL, 'ОДОБРЕНО:', '1', 327150134963, '0', NULL, 't', 29118026) RETURNING *'''
+            creature_bankcardpayment = f'''INSERT INTO "public"."ch_bankcardpayment" ("id", "amount", "authcode", "cardnumber", "cardhash", "cardtype", "cashtransid", "cashtransdate", "hosttransid", "merchantid", "message", "operationcode", "refnumber", "responsecode", "resultcode", "status", "terminalid", "bankid", "banktype") 
+            VALUES ({id_paymont}, {price_sum}, '391175', '************9958', '5A511B2242B9EC6113E0649625E407CF10191115', 'Visa', 170005, '{data}', NULL, NULL, 'ОДОБРЕНО:', 1, '327150134963', '0', NULL, 't', 29118026, 'Сбербанк', 0) RETURNING *'''
+            print(creature_bankcardpayment)
             cursor.execute(creature_bankcardpayment)
             conn.commit()
 
             creature_bankcardpayment_transaction =  f'''INSERT INTO "public"."ch_bankcardpayment_transaction" ("id", "authcode", "cardnumber", "cardhash", "cardtype", "cashtransid", "cashtransdate", "hosttransid", "merchantid", "message", "operationcode", "refnumber", "responsecode", "currency", "resultcode", "status", "terminalid", "bankid", "banktype") 
-            VALUES ({id_payment_transaction}, '243892', '************6964', '47FF8E2E5D9D7C651693628984CEDC4990787855', 'Visa', 170010, '2023-09-28 14:41:22.379', NULL, NULL, 'ОДОБРЕНО:', 1, '327150134963', '0', 'RUB', NULL, 't', '29118026', 'Сбербанк', 1) RETURNING *'''
+            VALUES ({id_payment_transaction}, '243892', '************6964', '47FF8E2E5D9D7C651693628984CEDC4990787855', 'Visa', 170010, '{data}', NULL, NULL, 'ОДОБРЕНО:', 1, '327111789292', '0', 'RUB', NULL, 't', '29118026', 'Сбербанк', 0) RETURNING *'''
+            print(creature_bankcardpayment_transaction)
             cursor.execute(creature_bankcardpayment_transaction)
             conn.commit()
         else:
             creature_paymont = f'''INSERT INTO "public"."ch_payment" ("id", "id_basecurrency", "id_currency", "datecommit", "datecreate", "numberfield", "paymenttype", "sumpay", "sumpaybasecurrency", "id_purchase", "successprocessed") 
-            VALUES (SELECT nextval('hibernate_sequence'), 'RUB', 'RUB', '{data}', '{data}', 1, 'CashPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
+            VALUES ((SELECT nextval('hibernate_sequence')), 'RUB', 'RUB', '{data}', '{data}', 1, 'CashPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
             cursor.execute(creature_paymont)
-            cursor.execute("SELECT lastval()")
-            id_paymont = cursor.fetchone()[0]
             conn.commit()
-
-    conn.close()
 
 def search_pos(conn,pos):
     cursor = conn.cursor()
     name_pos, nds = pos['position_name'], pos['nds']
-    print(name_pos,nds)
     while True:
         zapros_prod = f"SELECT br.barcode,pr.item,pr.measure_code,pr.category_mask,pr.mark_type FROM cg_product pr JOIN cg_barcode br ON br.product_item = pr.item where pr.name like '%{name_pos}%' and pr.nds = '{nds}' and br.defaultcode = 't' limit 1"
         cursor.execute(zapros_prod)

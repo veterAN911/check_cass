@@ -42,12 +42,18 @@ def search_shift_cass_30(cass,session):
 
 
 def search_shift(cass,num_shift,session):
-    last_values = []
-    search_shift = f'https://org.1-ofd.ru/api/cp-ofd/kkms/{cass}/transactions?shiftNumber={num_shift}&transactionTypes=BSO,TICKET&page=1&pageSize=120'
-    payload = {'shiftNumber': num_shift,'transactionTypes': 'BSO,TICKET','page': 1,'pageSize': 120}
-    response = session.get(search_shift)
-    data = response.json()
-    return data
+    all_transactions = {"transactions": []}  # Список для хранения всех чеков
+    for page in range(1, 100):
+        search_shift = f'https://org.1-ofd.ru/api/cp-ofd/kkms/{cass}/transactions?shiftNumber={num_shift}&transactionTypes=BSO,TICKET&page={page}&pageSize=120'
+        response = session.get(search_shift)
+        data = response.json()
+        transactions = data.get('transactions', [])
+        all_transactions["transactions"].extend(transactions)
+        if len(transactions) < 120:  # Если получено меньше 120 чеков, прекращаем запросы
+            pagination_data = data["pagination"]
+            break
+    all_transactions["pagination"] = pagination_data
+    return all_transactions
 
 def search_shift_all(log, pas, factorynum, num_shift):
     session = authorize(log, pas)
