@@ -13,6 +13,7 @@ def extract_last_value(string):
 
 def compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id):
     set_text_to_entry_logi("\nПолучены данные из ОФД")
+    entry0_1_1.yview(tk.END)
     last_values = zapros_OFD.search_shift_all(login,password, result_num_fiscal[0],result_num_fiscal[1])
     list1 = []
     for i in range(last_values['pagination']['totalItems']):
@@ -20,12 +21,14 @@ def compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
         list1.append(last_value)
 
     set_text_to_entry_logi("\nПолучены данные из базы данных")
+    entry0_1_1.yview(tk.END)
     check_bd = cash_postgresql.num_check_db(cash, id)
     list2 = [int(item[0]) for item in check_bd]
     list1 = [int(i) for i in list1]
     set1 = set(list1)
     set2 = set(list2)
     set_text_to_entry_logi("\nСверяются данные из ОФД и БД кассы")
+    entry0_1_1.yview(tk.END)
     missing_elements = list(set1 - set2)
     if(missing_elements == []):
         messagebox.showinfo("Результат", "Смены сверены с ОФД расхождений нету")
@@ -36,6 +39,7 @@ def compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
             for i in range(len(missing_elements)):
                 num_check = f"{prefix_cass}_{str(missing_elements[i])}"
                 set_text_to_entry_logi(f"\nФормируем чек {num_check}")
+                entry0_1_1.yview(tk.END)
                 check = zapros_OFD.select_ofd_check(num_check)
                 receipt_details = parser_check.pars_check(check)
                 receipt_pos_details = parser_check.pars_pos(check)
@@ -44,6 +48,7 @@ def compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
             messagebox.showinfo("Результат", "Отсутствующие чеки сформированны")
         else:
             set_text_to_entry_logi("\nОставляем смену")
+            entry0_1_1.yview(tk.END)
 
 def check_and_create_OFD_file():
     try:
@@ -71,33 +76,31 @@ def check_and_create_OFD_file():
 def send_data():
     connOFD = combo.get()
     id = entry1_1.get().strip()
-    #try:
-    ofd_data = check_and_create_OFD_file()
-        #try:
-    cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
-    catalog = cash_postgresql.con_catalog(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
-    result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(cash, id)
-    
-
-    if connOFD == "Fix Price":
-        login = ofd_data['fix']['login']
-        password = ofd_data['fix']['password']
-        compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
-    elif connOFD == "Азбука Вкус":
-        login = ofd_data['azbuka']['login']
-        password = ofd_data['azbuka']['password']
-        compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
-        #except:
-            #messagebox.showerror("Error","Нет подключеня к базе кассы!")
-    #except ValueError as e:
-        #set_text_to_entry_logi("\n Не обрабатываются данные для ОФД")
+    try:
+        ofd_data = check_and_create_OFD_file()
+        try:
+            cash = cash_postgresql.con_cash(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
+            catalog = cash_postgresql.con_catalog(entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
+            result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(cash, id)
+            if connOFD == "Fix Price":
+                login = ofd_data['fix']['login']
+                password = ofd_data['fix']['password']
+                compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
+            elif connOFD == "Азбука Вкус":
+                login = ofd_data['azbuka']['login']
+                password = ofd_data['azbuka']['password']
+                compare_receipts_in_shift(login, password,cash,catalog,result_num_fiscal,id)
+        except:
+            messagebox.showerror("Error","Нет подключеня к базе кассы!")
+    except ValueError as e:
+        set_text_to_entry_logi("\n Не обрабатываются данные для ОФД{e}")
 
 def set_text_to_entry_logi(text):
     entry0_1_1.insert(tk.END, text)
 
 root = tk.Tk()
 root.title("Восстановление чеков в смене")
-root.geometry("350x150") 
+root.geometry("400x210") 
 
 frame = tk.Frame(root)
 frame.pack(expand=True)
@@ -119,11 +122,6 @@ entry1_1.grid(row=0, column=3)
 label1 = tk.Label(frame, text="Логин")
 label1.grid(row=1, column=0)
 
-entry0_1_1 = tk.Text(frame, height=8, width=40)
-entry0_1_1.insert(tk.END, "Вывод лог файлов:")
-entry0_1_1.grid(row=1, column=2, rowspan=2, columnspan=2)
-entry0_1_1.configure(font=("Arial", 6))
-
 entry1 = tk.Entry(frame)
 entry1.insert(0, "postgres")
 entry1.grid(row=1, column=1)
@@ -136,14 +134,17 @@ entry2.insert(0, "postgres")
 entry2.grid(row=2, column=1)
 
 button1 = tk.Button(frame, text="Проверить", command=send_data)
-button1.grid(row=3, column=1)
-
-
-label1 = tk.Label(frame, text="Логин")
-label1.grid(row=1, column=0)
+button1.grid(row=3, column=0, columnspan=4, sticky='ew')
+button1.configure(width=10, height=1)
 
 container = tk.Frame(root)
 container.pack(side='bottom', fill='both', expand=True)
+
+entry0_1_1 = tk.Text(frame, height=8, width=40)
+entry0_1_1.insert(tk.END, "Вывод лог файлов:")
+
+entry0_1_1.grid(row=4, column=0, columnspan=4, sticky='ew', padx=5, pady=5)
+entry0_1_1.configure(font=("Arial", 6))
 
 combo = Combobox(container)
 combo['values'] = ("Fix Price", "Азбука Вкус")
