@@ -28,8 +28,11 @@ def compare_receipts_in_shift(
         id):
     set_text_to_entry_logi("\nПолучены данные из ОФД")
     entry0_1_1.yview(tk.END)
-    last_values = zapros_OFD.search_shift_all(
-        login, password, result_num_fiscal[0], result_num_fiscal[1])
+    try:
+        last_values = zapros_OFD.search_shift_all(
+            login, password, result_num_fiscal[0], result_num_fiscal[1])
+    except:
+        messagebox.showerror("Error", "Произошла ошибка при подключении к ОФД")        
     list1 = []
     for i in range(last_values['pagination']['totalItems']):
         last_value = extract_last_value(last_values['transactions'][i]['id'])
@@ -125,22 +128,29 @@ def send_data():
                 entry2.get().strip())
             catalog = cash_postgresql.con_catalog(
                 entry0.get().strip(), entry1.get().strip(), entry2.get().strip())
-            result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(
-                cash, id)
-            if connOFD == "Fix Price":
-                login = ofd_data['fix']['login']
-                password = ofd_data['fix']['password']
-                compare_receipts_in_shift(
-                    login, password, cash, catalog, result_num_fiscal, id)
-            elif connOFD == "Азбука Вкус":
-                login = ofd_data['azbuka']['login']
-                password = ofd_data['azbuka']['password']
-                compare_receipts_in_shift(
-                    login, password, cash, catalog, result_num_fiscal, id)
+            try:
+                result_num_fiscal = cash_postgresql.num_smen_and_fiscalnum(cash, id)
+                if not all(result_num_fiscal):
+                    raise ValueError("Получены пустые значения из базы данных")
+                if connOFD == "Fix Price":
+                    login = ofd_data['fix']['login']
+                    password = ofd_data['fix']['password']
+                    try:
+                        compare_receipts_in_shift(
+                            login, password, cash, catalog, result_num_fiscal, id)
+                    except FileNotFoundError as e:
+                        messagebox.showerror("Error", f'Возникла ошибка при создание чека: {e}')
+                elif connOFD == "Азбука Вкус":
+                    login = ofd_data['azbuka']['login']
+                    password = ofd_data['azbuka']['password']
+                    compare_receipts_in_shift(
+                        login, password, cash, catalog, result_num_fiscal, id)
+            except ValueError:
+                messagebox.showerror("Error", "Вероятно не заполнены все данные в ch_shift")    
         except BaseException:
             messagebox.showerror("Error", "Нет подключеня к базе кассы!")
-    except ValueError as e:
-        set_text_to_entry_logi("\n Не обрабатываются данные для ОФД{e}")
+    except FileNotFoundError as e:
+        set_text_to_entry_logi(f"\n Не обрабатываются данные для ОФД{e}")
 
 
 def set_text_to_entry_logi(text):

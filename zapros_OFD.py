@@ -66,10 +66,12 @@ def search_shift(cass, num_shift, session):
 
 
 def search_shift_all(log, pas, factorynum, num_shift):
-    session = authorize(log, pas)
-    cass = search_cass(factorynum, session)
-    check_num = search_shift(cass, num_shift, session)
-    return check_num
+        session = authorize(log, pas)
+        if session == None:
+            return 'error'
+        cass = search_cass(factorynum, session)
+        check_num = search_shift(cass, num_shift, session)
+        return check_num
 
 
 def select_ofd_check(check):
