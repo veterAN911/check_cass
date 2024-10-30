@@ -10,7 +10,6 @@ def con_cash(ip, login, pas):
         port="5432",
         options="-c client_encoding=UTF8"
     )
-    print('Есть подключение к БД')
     return conn
 
 
@@ -102,7 +101,6 @@ def new_cap_check(
         "qnty","precision","sumfield","sumdiscount","typepricenumber","id_purchase","category_mask","can_change_qnty","minimal_price_alarm","return_restricted","collapsible","no_actions","fixed_price","excise","raw_string","flags_mask","mark_type","calculation_method")
         (SELECT nextval('hibernate_sequence'),'{barcode}','t','{data}',1,0,'{item}','{ST}','{name}','{NDS}','NDS','{sum_nds}',{num_position},'{price_1_pos}','{price_1_pos}','ProductPieceEntity',{qentity},1,
         '{price_sum}','0','1',{id_purchase},'{cat_mask}','t','NONE','f','t','f','f','{excise_code}','{excise_code}','0',{mark_type},'4');'''
-        print(creature_position)
 
         cursor.execute(creature_position)
         conn.commit()
@@ -127,13 +125,11 @@ def new_cap_check(
 
             creature_bankcardpayment = f'''INSERT INTO "public"."ch_bankcardpayment" ("id", "amount", "authcode", "cardnumber", "cardhash", "cardtype", "cashtransid", "cashtransdate", "hosttransid", "merchantid", "message", "operationcode", "refnumber", "responsecode", "resultcode", "status", "terminalid", "bankid", "banktype")
             VALUES ({id_paymont}, {price_sum}, '391175', '************9958', '5A511B2242B9EC6113E0649625E407CF10191115', 'Visa', 170005, '{data}', NULL, NULL, 'ОДОБРЕНО:', 1, '327150134963', '0', NULL, 't', 29118026, 'Сбербанк', 0) RETURNING *'''
-            print(creature_bankcardpayment)
             cursor.execute(creature_bankcardpayment)
             conn.commit()
 
             creature_bankcardpayment_transaction = f'''INSERT INTO "public"."ch_bankcardpayment_transaction" ("id", "authcode", "cardnumber", "cardhash", "cardtype", "cashtransid", "cashtransdate", "hosttransid", "merchantid", "message", "operationcode", "refnumber", "responsecode", "currency", "resultcode", "status", "terminalid", "bankid", "banktype")
             VALUES ({id_payment_transaction}, '243892', '************6964', '47FF8E2E5D9D7C651693628984CEDC4990787855', 'Visa', 170010, '{data}', NULL, NULL, 'ОДОБРЕНО:', 1, '327111789292', '0', 'RUB', NULL, 't', '29118026', 'Сбербанк', 0) RETURNING *'''
-            print(creature_bankcardpayment_transaction)
             cursor.execute(creature_bankcardpayment_transaction)
             conn.commit()
         else:

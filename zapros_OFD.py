@@ -1,6 +1,6 @@
 import requests
-import time
 import json
+from jsonpath_ng import jsonpath, parse
 
 global_session = None
 
@@ -28,7 +28,8 @@ def search_cass(factorynum, session):
     response = session.post(searck_cass_url, json=searck_cass_payload)
 
     data = response.json()
-    return data['subgroups'][0]['retailPlaces'][0]['kkms'][0]['id']
+    result = [match.value for match in parse("$..retailPlaces[0]['kkms'][0]['id']").find(data)][0]
+    return result
 
 
 def search_shift_cass_30(cass, session):
@@ -56,6 +57,8 @@ def search_shift(cass, num_shift, session):
         search_shift = f'https://org.1-ofd.ru/api/cp-ofd/kkms/{cass}/transactions?shiftNumber={num_shift}&transactionTypes=BSO,TICKET&page={page}&pageSize=120'
         response = session.get(search_shift)
         data = response.json()
+        print(search_shift)
+        print(data)
         transactions = data.get('transactions', [])
         all_transactions["transactions"].extend(transactions)
         if len(transactions) < 120:  # Если получено меньше 120 чеков, прекращаем запросы
