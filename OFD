@@ -1,10 +1,10 @@
 {
   "fix": {
-    "login": "**********",
-    "password": "***********"
+    "login": "",
+    "password": ""
   },
   "azbuka": {
-    "login": "***********",
-    "password": "***********"
+    "login": "",
+    "password": ""
   }
 }

@@ -1,5 +1,8 @@
 import psycopg2
+import logging
+from logging_config import setup_logging
 
+setup_logging()
 
 def con_cash(ip, login, pas):
     conn = psycopg2.connect(
@@ -11,6 +14,7 @@ def con_cash(ip, login, pas):
         options="-c client_encoding=UTF8"
     )
     print('Есть подключение к БД')
+    logging.info("Connect database cash")
     return conn
 
 
@@ -23,6 +27,8 @@ def con_catalog(ip, login, pas):
         port="5432",
         options="-c client_encoding=UTF8"
     )
+    print('Есть подключение к БД')
+    logging.info("Connect database catalog")
     return conn
 
 
@@ -31,6 +37,7 @@ def num_smen_and_fiscalnum(conn, id):
     query = f"SELECT fiscalnum,numshift FROM public.ch_shift WHERE id = '{id}'"
     cursor.execute(query)
     result = cursor.fetchone()
+    logging.debug(f"We get the fiscal number from the database \nzapros: {query} \nrezylt {result}")
     return result
 
 
@@ -39,6 +46,7 @@ def num_check_db(conn, id):
     query = f"SELECT fiscal_doc_id FROM public.ch_purchase WHERE id_shift = '{id}' and fiscal_doc_id IS NOT NULL ORDER BY fiscal_doc_id DESC"
     cursor.execute(query)
     result = cursor.fetchall()
+    logging.debug("Creating the receipt number check_db")
     return result
 
 
@@ -71,12 +79,21 @@ def new_cap_check(
                         "on_day","guid_cashier_work_period","qr_code","fiscal_doc_id","cashoperation","reg_status","reg_data","kpp")
                         (SELECT nextval('hibernate_sequence'),'{data}','{data}','{fiscal_num};{general_info[0][0] + 1}',{general_info[0][0] + 1},2,{general_info[0][3]},'{id}',
                         0,{summ_check},{summ_check},0,0,-1,'t',NULL,NULL,{fiscal_num},NULL,NULL,'f',NULL,0,NULL,{general_info[0][1]},'f',0,NULL,NULL,'{(qr)}',{fiscal_num},0,NULL,NULL,{general_info[0][2]});'''
-    cursor.execute(creature_check)
+    logging.debug(f"Creating a receipt with a request in the database ({creature_check})")
+    try:
+        cursor.execute(creature_check)
+    except BaseException as e:
+        logging.exception(f"ERROR: zapros {creature_check} \n {e}")
+
     cursor.execute("SELECT lastval()")
     id_purchase = cursor.fetchone()[0]
     conn.commit()
 
     for pos in data_position:
+        cursor.execute("SELECT max(id) FROM ch_position")
+        nextval = int(cursor.fetchone()[0])
+        conn.commit()
+
         response_s_pos = search_pos(conn_catalog, pos)[0]
         name = pos['position_name']
         NDS = pos['nds']
@@ -87,7 +104,6 @@ def new_cap_check(
         qentity = pos['col']
         excise_code = pos['subjectCode']
         excise_code = excise_code.replace("'", "''").replace('"', '""')
-
         barcode = response_s_pos[0]
         item = response_s_pos[1]
         ST = response_s_pos[2]
@@ -95,14 +111,13 @@ def new_cap_check(
         mark_type = response_s_pos[4]
         if mark_type is None:
             mark_type = 'null'
-
         creature_position = f'''INSERT INTO ch_position (
         "id","barcode","calculatediscount","datecommit",
         "departnumber","inserttype","item","measure_code","name","nds","ndsclass","ndssum","numberfield","priceend","pricestart","product_type",
         "qnty","precision","sumfield","sumdiscount","typepricenumber","id_purchase","category_mask","can_change_qnty","minimal_price_alarm","return_restricted","collapsible","no_actions","fixed_price","excise","raw_string","flags_mask","mark_type","calculation_method")
-        (SELECT nextval('hibernate_sequence'),'{barcode}','t','{data}',1,0,'{item}','{ST}','{name}','{NDS}','NDS','{sum_nds}',{num_position},'{price_1_pos}','{price_1_pos}','ProductPieceEntity',{qentity},1,
-        '{price_sum}','0','1',{id_purchase},'{cat_mask}','t','NONE','f','t','f','f','{excise_code}','{excise_code}','0',{mark_type},'4');'''
-        print(creature_position)
+        VALUES ({nextval + 1},'{barcode}',true,'{data}',1,0,'{item}','{ST}','{name}',{NDS},'NDS',{sum_nds},{num_position},{price_1_pos},{price_1_pos},'ProductPieceEntity',{qentity},1,
+        {price_sum},0,1,{id_purchase},'{cat_mask}',true,'NONE',false,true,false,false,'{excise_code}','{excise_code}',0,{mark_type},4);'''
+        logging.debug(f"Creating positions for the receipt by a query in the database zapros: \n ({creature_position})\n")
 
         cursor.execute(creature_position)
         conn.commit()
@@ -111,15 +126,21 @@ def new_cap_check(
             cursor.execute(query)
             cash_num_shop = cursor.fetchall()[0]
 
+            cursor.execute("SELECT max(id) FROM ch_payment")
+            nextval_ch_payment = int(cursor.fetchone()[0]) + 1
+            conn.commit()
             creature_paymont = f'''INSERT INTO "public"."ch_payment" ("id", "id_basecurrency", "id_currency", "datecommit", "datecreate", "numberfield", "paymenttype", "sumpay", "sumpaybasecurrency", "id_purchase", "successprocessed")
-            VALUES ((SELECT nextval('hibernate_sequence')), 'RUB', 'RUB', '{data}', '{data}', 1, 'BankCardPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
+            VALUES ({nextval_ch_payment}, 'RUB', 'RUB', '{data}', '{data}', 1, 'BankCardPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
             cursor.execute(creature_paymont)
             cursor.execute("SELECT lastval()")
             id_paymont = cursor.fetchone()[0]
             conn.commit()
 
+            cursor.execute("SELECT max(id) FROM ch_payment_transaction")
+            nextval_ch_payment_transaction = int(cursor.fetchone()[0]) + 1
+            conn.commit()
             creature_payment_transaction = f'''INSERT INTO "public"."ch_payment_transaction" ("id", "cash_num", "discriminator", "create_time", "sumpay", "senttoserverstatus", "filename", "id_purchase", "id_payment", "num_shift", "cash_guid", "shop_index", "annulling")
-            VALUES ((SELECT nextval('hibernate_sequence')), {cash_num_shop[0]}, 'BankCardPaymentEntity', '{data}', 29100, 2, NULL, {id_purchase}, {id_paymont}, {cash_num_shop[1]}, 1728763812094, {cash_num_shop[2]}, 'f')'''
+            VALUES ({nextval_ch_payment_transaction}, {cash_num_shop[0]}, 'BankCardPaymentEntity', '{data}', 29100, 2, NULL, {id_purchase}, {id_paymont}, {cash_num_shop[1]}, 1728763812094, {cash_num_shop[2]}, 'f')'''
             cursor.execute(creature_payment_transaction)
             cursor.execute("SELECT lastval()")
             id_payment_transaction = cursor.fetchone()[0]
@@ -137,8 +158,11 @@ def new_cap_check(
             cursor.execute(creature_bankcardpayment_transaction)
             conn.commit()
         else:
+            cursor.execute("SELECT max(id) FROM ch_payment")
+            nextval_ch_payment = int(cursor.fetchone()[0]) + 1
+            conn.commit()
             creature_paymont = f'''INSERT INTO "public"."ch_payment" ("id", "id_basecurrency", "id_currency", "datecommit", "datecreate", "numberfield", "paymenttype", "sumpay", "sumpaybasecurrency", "id_purchase", "successprocessed")
-            VALUES ((SELECT nextval('hibernate_sequence')), 'RUB', 'RUB', '{data}', '{data}', 1, 'CashPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
+            VALUES ({nextval_ch_payment}, 'RUB', 'RUB', '{data}', '{data}', 1, 'CashPaymentEntity', {price_sum}, {price_sum}, {id_purchase}, 't')'''
             cursor.execute(creature_paymont)
             conn.commit()
 
@@ -146,8 +170,10 @@ def new_cap_check(
 def search_pos(conn, pos):
     cursor = conn.cursor()
     name_pos, nds = pos['position_name'], pos['nds']
+
     while True:
         zapros_prod = f"SELECT br.barcode,pr.item,pr.measure_code,pr.category_mask,pr.mark_type FROM cg_product pr JOIN cg_barcode br ON br.product_item = pr.item where pr.name like '%{name_pos}%' and pr.nds = '{nds}' and br.defaultcode = 't' limit 1"
+        logging.debug(f"Search position and database zapros: ({zapros_prod})")
         cursor.execute(zapros_prod)
         result = cursor.fetchall()
         if result:
