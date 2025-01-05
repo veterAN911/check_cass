@@ -1,6 +1,8 @@
 Уже собранная версия расположена в 
 check_cass/dist/
-с именем new_check.exe
+с именем new_check_1.2.exe
+
+Добавлено логированияе и обработаны данные nds 
 
 Для ручной сборки после корректировки файлов выполняем инструкцию по сборке ниже.
 
@@ -13,4 +15,5 @@ cd check_cass
 .\check\Scripts\activate.bat
 
 3) Собираем приложение командой:
-pyinstaller --onefile --noconsole --name new_check --icon=14.ico .\gracik.py .\cash_postgresql.py .\parser_check.py .\zapros_OFD.py
+pyinstaller --onefile --noconsole --name new_check_1.2 --icon=14.ico .\gracik.py .\cash_postgresql.py .\parser_check.py 
+.\zapros_OFD.py .\logging_config.py .\image_base64.py
